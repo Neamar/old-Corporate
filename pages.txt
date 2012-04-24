@@ -1,21 +1,16 @@
-Règles
-	Présentation
-	Univers
-	Un trimestre à Neo-Tokyo
-	Créer son personnage
-	Fin du jeu
-	Et en pratique ?
-Entités
-	Corpo
-		*10
-	Fixer
-		*10
-	Yakuza
-		*4
-	Agence
-		*2
-	Joueurs
-		*n
-Bourse
-Message
-Espace perso
+Règles /doc/
+	*6 /doc/{slug}
+Entités /entites/
+	Corpo /entites/corpos/
+		*10 /entites/corpos/{slug}
+	Fixer /entites/fixers
+		*10 /entites/fixers/{slug}
+	Yakuza /entites/yakuzas/
+		*4 /entites/yakuzas/{slug}
+	Agence /entites/agences/
+		*2 /entites/agences/{slug}
+	Joueurs /entites/joueurs/
+		*n /entites/joueurs/{slug}
+Bourse /bourse/
+Message /messages/
+Espace perso /perso/

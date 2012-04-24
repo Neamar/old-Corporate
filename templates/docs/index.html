@@ -1,0 +1,5 @@
+<ul>
+{% for rule in rule_list %}
+	<li><a href="/docs/{{ rule.slug}}">{{ rule.title }}</a></li>
+{% endfor %}
+</ul>

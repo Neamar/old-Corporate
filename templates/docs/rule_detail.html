@@ -3,6 +3,11 @@
 {% block h1 %}{{ rule.title }}{% endblock %}
 
 {% block content %}
-{% load markup %}
-{{ rule.content|markdown }}
+	{% load markup %}
+	{{ rule.content|markdown }}
+{% endblock %}
+
+{% block end %}
+	{{ block.super }} | 
+	<a href="/docs/">Retour à la documentation</a>
 {% endblock %}

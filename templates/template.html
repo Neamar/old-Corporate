@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Audiowide|Syncopate' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ STATIC_URL }}/style.css" />
 	<title>{% block title %}Corporate game{% endblock %}</title>
 </head>
@@ -21,6 +21,10 @@
 			<h1>{% block h1 %}Corporate game{% endblock %}</h1>
 
 			{% block content %}{% endblock %}
+		</div>
+
+		<div id="end">
+			{% block end %}<a href="#">&uarr;</a>{% endblock %}
 		</div>
 	</div>
 </body>

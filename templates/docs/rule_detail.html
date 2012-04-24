@@ -1,3 +1,8 @@
-<h1>{{ rule.title }}</h1>
+{% extends "template.html" %}
+{% block title %}{{ rule.title }}{% endblock %}
+{% block h1 %}{{ rule.title }}{% endblock %}
+
+{% block content %}
 {% load markup %}
 {{ rule.content|markdown }}
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ STATIC_URL }}/style.css" />
+	<title>{% block title %}Corporate game{% endblock %}</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="sidebar">
+			<ul>
+				<li><a href="/docs">docs</a></li>
+				<li><a href="/entites/corpos/">corpos</a></li>
+				<li><a href="/entites/fixers/">fixers</a></li>
+			</ul>
+		</div>
+
+
+		<div id="content">
+			<h1>{% block h1 %}Corporate game{% endblock %}</h1>
+
+			{% block content %}{% endblock %}
+		</div>
+	</div>
+</body>
+</html>

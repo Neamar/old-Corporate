@@ -1,5 +1,11 @@
+{% extends "template.html" %}
+{% block title %}Règles du corporate game{% endblock %}
+{% block h1 %}Liste des règles{% endblock %}
+
+{% block content %}
 <ul>
 {% for rule in rule_list %}
 	<li><a href="/docs/{{ rule.slug}}">{{ rule.title }}</a></li>
 {% endfor %}
 </ul>
+{% endblock %}

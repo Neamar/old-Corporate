@@ -1,0 +1,21 @@
+Règles
+	Présentation
+	Univers
+	Un trimestre à Neo-Tokyo
+	Créer son personnage
+	Fin du jeu
+	Et en pratique ?
+Entités
+	Corpo
+		*10
+	Fixer
+		*10
+	Yakuza
+		*4
+	Agence
+		*2
+	Joueurs
+		*n
+Bourse
+Message
+Espace perso

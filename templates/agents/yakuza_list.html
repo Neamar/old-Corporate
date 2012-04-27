@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+{% block title %}Yakuzas{% endblock %}
+{% block h1 %}Liste des yakuzas{% endblock %}
+
+{% block content %}
+<ul>
+{% for yakuza in yakuza_list %}
+	<li><a href="/agents/yakuzas/{{ yakuza.slug }}">{{ yakuza.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+{% block title %}Fixers{% endblock %}
+{% block h1 %}Liste des fixers{% endblock %}
+
+{% block content %}
+<ul>
+{% for fixer in fixer_list %}
+	<li><a href="/agents/fixers/{{ fixer.slug}}">{{ fixer.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

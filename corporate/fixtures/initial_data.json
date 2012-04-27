@@ -1,0 +1,28 @@
+[
+  {
+    "pk": 1,
+    "model": "auth.user",
+    "fields": {
+      "username": "neamar",
+      "first_name": "",
+      "last_name": "",
+      "is_active": true,
+      "is_superuser": true,
+      "is_staff": true,
+      "last_login": "2012-04-25T16:29:03.299Z",
+      "groups": [],
+      "user_permissions": [],
+      "password": "pbkdf2_sha256$10000$axTntwRcA6LR$oxVOgt5FBCytt17JZH7r7z7JLeIMMyo/7v1xE+6sXZk=",
+      "email": "neamar@neamar.fr",
+      "date_joined": "2012-04-25T16:29:03.299Z"
+    }
+  },
+  {
+    "pk": "fdaf8da940cb4bec2797efd8e494ab04",
+    "model": "sessions.session",
+    "fields": {
+      "expire_date": "2015-05-09T16:35:33.202Z",
+      "session_data": "NDVkZTViZjE4YjAzZjk2YjFkYWQwYjAwNWU4YTY5MjNkZjJiNjM3MjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+    }
+  }
+]

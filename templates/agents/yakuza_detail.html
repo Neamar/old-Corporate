@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% load markup %}
+
+{% block title %}{{ yakuza.name}} | Fixer{% endblock %}
+{% block h1 %}{{ yakuza.name }}{% endblock %}
+
+{% block content %}
+	<p>{{ yakuza.capacity_information }} /
+	{{ yakuza.capacity_datasteal }} /
+	{{ yakuza.capacity_sabotage }} /
+	{{ yakuza.capacity_scandal }} /
+	{{ yakuza.capacity_protection }}</p>
+
+	{{ yakuza.description|markdown }}
+{% endblock %}
+
+{% block end %}
+	{{ block.super }} |
+	<a href="/agents/yakuzas/">Retour à la liste des yakuzas</a>
+{% endblock %}

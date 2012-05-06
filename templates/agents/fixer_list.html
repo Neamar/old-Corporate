@@ -5,7 +5,7 @@
 {% block content %}
 <ul>
 {% for fixer in fixer_list %}
-	<li><a href="/agents/fixers/{{ fixer.slug}}">{{ fixer.name }}</a></li>
+	<li><a href="/agents/fixers/{{ fixer.slug}}" title="{{ fixer.get_capacity_display }}">{{ fixer.name }}</a></li>
 {% endfor %}
 </ul>
 {% endblock %}

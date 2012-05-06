@@ -11,6 +11,7 @@ class Entity(models.Model):
 	description = models.TextField()
 
 	def save(self, *args, **kwargs):
+	# Auto fill slug and type
 		if not self.id:
 			self.slug = slugify(self.name)
 			self.type = self.__class__.__name__.lower();
@@ -28,3 +29,6 @@ class AbleEntity(Entity):
 	capacity_sabotage = models.PositiveSmallIntegerField()
 	capacity_scandal = models.PositiveSmallIntegerField()
 	capacity_protection = models.PositiveSmallIntegerField()
+
+	def get_capacity_display(self):
+		return "i%s / d%s / s%s / t%s / p%s" % (self.capacity_information, self.capacity_datasteal, self.capacity_sabotage, self.capacity_scandal, self.capacity_protection)

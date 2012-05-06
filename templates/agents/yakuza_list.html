@@ -5,7 +5,7 @@
 {% block content %}
 <ul>
 {% for yakuza in yakuza_list %}
-	<li><a href="/agents/yakuzas/{{ yakuza.slug }}">{{ yakuza.name }}</a></li>
+	<li><a href="/agents/yakuzas/{{ yakuza.slug }}" title="{{ yakuza.get_capacity_display }}">{{ yakuza.name }}</a></li>
 {% endfor %}
 </ul>
 {% endblock %}

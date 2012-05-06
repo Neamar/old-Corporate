@@ -1,0 +1,21 @@
+{% extends "template.html" %}
+{% block title %}Corporations{% endblock %}
+{% block h1 %}Liste des corporations{% endblock %}
+
+{% block content %}
+<p>Personne ne sera surpris d’apprendre que les corporations ont une influence étendue à travers tout Neo-Tokyo,
+ni que les japanocorps MCT, Shiawase et Renraku sont les plus envahissantes.
+
+Les autres corpos, y compris certaines qualifiées de "gaijins" ne sont pas pour autant insignifiantes,
+et, parmi les Big Ten, beaucoup ont leurs compagnies, divisions et intérêts clandestins dans le mégaplexe.
+
+Toutes sont prêtes à se sauter à la gorge, que ce soit sous un prétexte d’honneur, de politique ou de bilan de fin de
+trimestre pour tenter de s’emparer du trésor inestimable qu’est Neo-Tokyo.</p>
+
+<ul>
+{% for corporation in corporation_list %}
+	<li><a href="/corpos/{{ corporation.slug}}" title="{{ corporation.get_capacity_display }}">{{ corporation.name }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}

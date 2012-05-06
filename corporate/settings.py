@@ -124,6 +124,7 @@ INSTALLED_APPS = (
     # Modules
     'corporate',
     'agents',
+    'corpos',
     'docs',
 )
 

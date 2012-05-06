@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% load markup %}
+
+{% block title %}{{ corporation.name}} | Corporation{% endblock %}
+{% block h1 %}{{ corporation.name }}{% endblock %}
+
+{% block content %}
+	<p>{{ corporation.capacity_information }} /
+	{{ corporation.capacity_datasteal }} /
+	{{ corporation.capacity_sabotage }} /
+	{{ corporation.capacity_scandal }}</p>
+
+	{{ corporation.description|markdown }}
+
+	<h2>En tête</h2>
+	{{ corporation.on_first|markdown }}
+
+	<h2>En queue</h2>
+	{{ corporation.on_last|markdown }}
+
+	<h2>En crash</h2>
+	{{ corporation.on_crash|markdown }}
+{% endblock %}
+
+{% block end %}
+	{{ block.super }} |
+	<a href="/corpos/">Retour à la liste des corpos</a>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% load markup %}
+
+{% block title %}{{ agency.name}} | Agence{% endblock %}
+{% block h1 %}{{ agency.name }}{% endblock %}
+
+{% block content %}
+	<p>{{ agency.capacity_information }} /
+	{{ agency.capacity_datasteal }} /
+	{{ agency.capacity_sabotage }} /
+	{{ agency.capacity_scandal }} /
+	{{ agency.capacity_protection }}</p>
+
+	{{ agency.description|markdown }}
+{% endblock %}
+
+{% block end %}
+	{{ block.super }} |
+	<a href="/agents/agences/">Retour à la liste des agences</a>
+{% endblock %}

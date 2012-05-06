@@ -12,3 +12,6 @@ class Fixer(Agent):
 
 class Yakuza(Agent):
 	pass
+
+class Agency(Agent):
+	pass

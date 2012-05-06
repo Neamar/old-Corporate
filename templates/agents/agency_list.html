@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+{% block title %}Agences{% endblock %}
+{% block h1 %}Liste des agences{% endblock %}
+
+{% block content %}
+<ul>
+{% for agency in agency_list %}
+	<li><a href="/agents/agences/{{ agency.slug}}" title="{{ agency.get_capacity_display }}">{{ agency.name }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

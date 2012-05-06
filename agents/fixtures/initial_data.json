@@ -1,1 +1,104 @@
-[{"pk": 1, "model": "agents.yakuza", "fields": {"description": "Les Watada-gumi est le type d\u2019organisation yakusa dont on a l\u2019habitude d\u2019entendre parler dans les films trid\u00e9os du dimanche matin : de vieux hommes d\u2019affaires en costume qui vous d\u00e9fient plus souvent avec un regard qu\u2019avec une \u00e9p\u00e9e. Depuis de nombreuses g\u00e9n\u00e9rations, la majorit\u00e9 des membres du clan est constitu\u00e9e de descendants \u00e9tant all\u00e9 \u00e0 l\u2019universit\u00e9 des familles yakusas.", "capacity_datasteal": 10, "foe": "", "capacity_information": 10, "capacity_protection": 10, "capacity_scandal": 20, "capacity_sabotage": 10, "type": "yakuza", "slug": "watada-gumi", "friend": "Mitsuhama, Renraku", "name": "Watada-gumi"}}, {"pk": 2, "model": "agents.yakuza", "fields": {"description": "Plus ancien et plus grand syndicat du crime organis\u00e9 de Neo-Tokyo, le Mita-gumia se r\u00e9afirme dans les rues, recrutant de nouveaux membres pour remplacer ceux perdus lors de la guerre yakusa, et cherchant de nouvelles possibilit\u00e9s d\u2019expansion.\r\n\r\nL\u2019h\u00e9ritier du chef pr\u00e9c\u00e9dent n\u2019a que 13 ans, ce qui permet \u00e0 Ryumyo, son \u201cgardien\u201d, de s\u2019inviter dans les affaires du gumi.", "capacity_datasteal": 10, "foe": "", "capacity_information": 10, "capacity_protection": 20, "capacity_scandal": 10, "capacity_sabotage": 10, "type": "yakuza", "slug": "mita-gumi", "friend": "Evo, Mitsuhama, Shiawase", "name": "Mita-gumi"}}, {"pk": 3, "model": "agents.yakuza", "fields": {"description": "L\u2019un des syndicats yakusas les plus jeunes de Neo-Tokyo, le Wanibuchi-gumi a adopt\u00e9 la modernit\u00e9 \u00e0 bras ouverts, en se concentrant sur les m\u00e9thodes de buisness non traditionnelles pour faire progresser ses int\u00e9r\u00eats. Le gumi comprend des effectifs tr\u00e8s vari\u00e9s, incluant un grand nombre de femmes et m\u00eame quelques m\u00e9tahumains, sans toutefois aller jusqu\u2019aux gaijins ou aux m\u00e9tisses, et dispose d\u2019une avance consid\u00e9rable dans les affaires matricielles.", "capacity_datasteal": 20, "foe": "", "capacity_information": 30, "capacity_protection": 0, "capacity_scandal": 0, "capacity_sabotage": 10, "type": "yakuza", "slug": "wanibuchi-gumi", "friend": "Hisato-Turner, Mitsuhama", "name": "Wanibuchi-gumi"}}, {"pk": 4, "model": "agents.yakuza", "fields": {"description": "L\u2019un des clans yakusas les plus craints de Neo-Tokyo. Il pr\u00e9f\u00e8re maintenir son contr\u00f4le avec une main de fer et est parfois montr\u00e9 du doigt par la police et les forces de s\u00e9curit\u00e9s corporatistes pour la violence excessive qu\u2019il utilise dans sa pratique classique des affaires. En cons\u00e9quence, le Kodachi-gumi a l\u2019honneur douteux de disposer de la plus grande influence sur le syst\u00e8me p\u00e9nal du Japon.", "capacity_datasteal": 0, "foe": "", "capacity_information": 10, "capacity_protection": 30, "capacity_scandal": 0, "capacity_sabotage": 20, "type": "yakuza", "slug": "kodachi-gumi", "friend": "Mitsuhama, Yakashima", "name": "Kodachi-gumi"}}]
+[
+  {
+    "pk": 1,
+    "model": "agents.yakuza",
+    "fields": {
+      "description": "Les Watada-gumi est le type d\u2019organisation yakusa dont on a l\u2019habitude d\u2019entendre parler dans les films trid\u00e9os du dimanche matin : de vieux hommes d\u2019affaires en costume qui vous d\u00e9fient plus souvent avec un regard qu\u2019avec une \u00e9p\u00e9e. Depuis de nombreuses g\u00e9n\u00e9rations, la majorit\u00e9 des membres du clan est constitu\u00e9e de descendants \u00e9tant all\u00e9 \u00e0 l\u2019universit\u00e9 des familles yakusas.",
+      "capacity_datasteal": 10,
+      "foe": "",
+      "capacity_information": 10,
+      "capacity_protection": 10,
+      "capacity_scandal": 20,
+      "capacity_sabotage": 10,
+      "type": "yakuza",
+      "slug": "watada-gumi",
+      "friend": "Mitsuhama, Renraku",
+      "name": "Watada-gumi"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "agents.yakuza",
+    "fields": {
+      "description": "Plus ancien et plus grand syndicat du crime organis\u00e9 de Neo-Tokyo, le Mita-gumia se r\u00e9afirme dans les rues, recrutant de nouveaux membres pour remplacer ceux perdus lors de la guerre yakusa, et cherchant de nouvelles possibilit\u00e9s d\u2019expansion.\r\n\r\nL\u2019h\u00e9ritier du chef pr\u00e9c\u00e9dent n\u2019a que 13 ans, ce qui permet \u00e0 Ryumyo, son \u201cgardien\u201d, de s\u2019inviter dans les affaires du gumi.",
+      "capacity_datasteal": 10,
+      "foe": "",
+      "capacity_information": 10,
+      "capacity_protection": 20,
+      "capacity_scandal": 10,
+      "capacity_sabotage": 10,
+      "type": "yakuza",
+      "slug": "mita-gumi",
+      "friend": "Evo, Mitsuhama, Shiawase",
+      "name": "Mita-gumi"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "agents.yakuza",
+    "fields": {
+      "description": "L\u2019un des syndicats yakusas les plus jeunes de Neo-Tokyo, le Wanibuchi-gumi a adopt\u00e9 la modernit\u00e9 \u00e0 bras ouverts, en se concentrant sur les m\u00e9thodes de buisness non traditionnelles pour faire progresser ses int\u00e9r\u00eats. Le gumi comprend des effectifs tr\u00e8s vari\u00e9s, incluant un grand nombre de femmes et m\u00eame quelques m\u00e9tahumains, sans toutefois aller jusqu\u2019aux gaijins ou aux m\u00e9tisses, et dispose d\u2019une avance consid\u00e9rable dans les affaires matricielles.",
+      "capacity_datasteal": 20,
+      "foe": "",
+      "capacity_information": 30,
+      "capacity_protection": 0,
+      "capacity_scandal": 0,
+      "capacity_sabotage": 10,
+      "type": "yakuza",
+      "slug": "wanibuchi-gumi",
+      "friend": "Hisato-Turner, Mitsuhama",
+      "name": "Wanibuchi-gumi"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "agents.yakuza",
+    "fields": {
+      "description": "L\u2019un des clans yakusas les plus craints de Neo-Tokyo. Il pr\u00e9f\u00e8re maintenir son contr\u00f4le avec une main de fer et est parfois montr\u00e9 du doigt par la police et les forces de s\u00e9curit\u00e9s corporatistes pour la violence excessive qu\u2019il utilise dans sa pratique classique des affaires. En cons\u00e9quence, le Kodachi-gumi a l\u2019honneur douteux de disposer de la plus grande influence sur le syst\u00e8me p\u00e9nal du Japon.",
+      "capacity_datasteal": 0,
+      "foe": "",
+      "capacity_information": 10,
+      "capacity_protection": 30,
+      "capacity_scandal": 0,
+      "capacity_sabotage": 20,
+      "type": "yakuza",
+      "slug": "kodachi-gumi",
+      "friend": "Mitsuhama, Yakashima",
+      "name": "Kodachi-gumi"
+    }
+  },
+  {
+    "pk": 1,
+    "model": "agents.agency",
+    "fields": {
+      "description": "Les yeux des corpos sont riv\u00e9s sur l\u2019Empereur, mais qui surveille les corpos ? Cette t\u00e2che et quelques autres tout aussi d\u00e9licates \u00e9choient \u00e0 l\u2019Agence de la Maison Imp\u00e9riale, un groupe ind\u00e9pendant du gouvernement national qui est organis\u00e9 et dirig\u00e9 comme une corporation. L\u2019Agence est financ\u00e9e en sous main par l\u2019Empereur et ses alli\u00e9s, \u00e0 qui elle rend des services vari\u00e9s allant du renseignement au trafic d\u2019actions, en passant par le hacking de compte et la manipulation des m\u00e9dias. Le but de l\u2019agence est de d\u00e9samorcer \u00e0 l\u2019avance les probl\u00e8mes de la Maison Imp\u00e9riale, ce qui lui a valu le surnom de \"Main gauche de l\u2019Empereur\".",
+      "capacity_datasteal": 10,
+      "foe": "Tous les nationalistes",
+      "capacity_information": 20,
+      "capacity_protection": 0,
+      "capacity_scandal": 20,
+      "capacity_sabotage": 10,
+      "type": "agency",
+      "slug": "maison-imperiale",
+      "friend": "Shiawase",
+      "name": "Maison Imp\u00e9riale"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "agents.agency",
+    "fields": {
+      "description": "Le Bureau de la Marine est une division de renseignement militaire et d\u2019analyse strat\u00e9gique, qui sert de couverture \u00e0 un groupe d\u2019intervention semi-l\u00e9gal sous les ordres de la Suret\u00e9. Mission vague d\u2019assurer la s\u00e9curit\u00e9 des citoyens, et financement occulte des japanocorps les plus proches de l\u2019appareil militaire imp\u00e9rial.",
+      "capacity_datasteal": 10,
+      "foe": "Tous les r\u00e9formateurs",
+      "capacity_information": 10,
+      "capacity_protection": 20,
+      "capacity_scandal": 0,
+      "capacity_sabotage": 20,
+      "type": "agency",
+      "slug": "bureau-de-la-marine",
+      "friend": "Mitsuhama",
+      "name": "Bureau de la Marine"
+    }
+  }
+]

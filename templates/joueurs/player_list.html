@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{% block title %}Joueurs{% endblock %}
+{% block h1 %}Liste des joueurs{% endblock %}
+
+{% block content %}
+<p>Neo-tokyo, c'est aussi des cadres dirigeants au sourire de requin et au costume-cravate impeccable. Bonne nouvelle : tu en fais partie.</p>
+
+<h2>Liens</h2>
+<ul>
+{% for player in player_list %}
+	<li><a href="/joueurs/{{ player.slug}}">{{ player.name }}</a></li>
+{% endfor %}
+</ul>
+
+<h2>Récapitulatif</h2>
+{% load display_entities %}
+{% display_entities player_list %}
+
+{% endblock %}

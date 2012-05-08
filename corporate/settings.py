@@ -126,6 +126,7 @@ INSTALLED_APPS = (
     'agents',
     'corpos',
     'docs',
+    'joueurs',
 )
 
 # A sample logging configuration. The only tangible logging

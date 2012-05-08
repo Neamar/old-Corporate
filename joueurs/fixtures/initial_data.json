@@ -1,0 +1,16 @@
+[
+  {
+    "pk": 1,
+    "model": "joueurs.player",
+    "fields": {
+      "description": "I'm the king.",
+      "honor": 6,
+      "pc": "R\u00e9mi",
+      "citizen": null,
+      "mail": "laedisu@hotmail.com",
+      "type": "player",
+      "slug": "wizae",
+      "name": "Wiza\u00e9"
+    }
+  }
+]

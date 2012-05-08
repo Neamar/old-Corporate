@@ -8,5 +8,6 @@ urlpatterns = patterns('',
 	url(r'^docs/', include('docs.urls')),
 	url(r'^agents/', include('agents.urls')),
 	url(r'^corpos/', include('corpos.urls')),
+	url(r'^joueurs/', include('joueurs.urls')),
 	url(r'^admin/', include(admin.site.urls),),
 )

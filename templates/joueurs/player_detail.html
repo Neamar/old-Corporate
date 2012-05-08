@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+{% load markup %}
+
+{% block title %}{{ player.name}} | Joueur{% endblock %}
+{% block h1 %}{{ player.name }}{% endblock %}
+
+{% block content %}
+	{% load display_entities %}
+	{% display_entities player %}
+	<p><strong>E-mail</strong> : <a href="mailto:{{ player.mail }}">{{ player.mail }}</a></p>
+
+	{{ player.description|markdown }}
+{% endblock %}
+
+{% block end %}
+	{{ block.super }} |
+	<a href="/joueurs/">Retour à la liste des joueurs</a>
+{% endblock %}

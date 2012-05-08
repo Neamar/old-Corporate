@@ -2,6 +2,7 @@ from django import template
 from corporate.models import Entity
 from agents.models import Yakuza, Fixer, Agency
 from corpos.models import Corporation
+from joueurs.models import Player
 
 register = template.Library()
 
@@ -29,6 +30,13 @@ def display_entities(entities):
 			('capacity_datasteal', 'Data.'),
 			('capacity_sabotage', 'Sab.'),
 			('capacity_scandal', 'Scan.'),
+		)
+
+	if isinstance(item_sample, (Player)):
+		attributes = (
+			('pc', 'Joueur'),
+			('honor', 'Honneur'),
+			('citizen', 'Citoyen'),
 		)
 
 	# Compute attributes

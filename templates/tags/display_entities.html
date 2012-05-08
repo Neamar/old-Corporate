@@ -1,0 +1,20 @@
+<table class="prop_table">
+	<caption>Tableau de propriétés</caption>
+	<thead>
+		<tr>
+		<th></th>
+		{% for attribute in attributes %}
+			<th>{{ attribute.1 }}</th>
+		{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+	{% for item in items %}
+		<tr>
+		{% for property in item %}
+			<td>{{ property }}</td>
+		{% endfor %}
+		</tr>
+	{% endfor %}
+	</tbody>
+</table>

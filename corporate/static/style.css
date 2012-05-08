@@ -13,6 +13,36 @@ p.right
    text-align:right;
 }
 
+table
+{
+   margin:auto;
+   border-collapse:collapse;
+}
+
+table caption
+{
+   text-align:right;
+   font-variant:small-caps;
+}
+tr, td, th
+{
+   border:1px solid black;
+   text-align:center;
+   min-width:50px;
+}
+
+th:first-child
+{
+   border-top:1px solid transparent;
+   border-left:1px solid transparent;
+}
+
+td:first-child
+{
+   font-weight:bold;
+   padding:0 20px;
+}
+
 #wrapper
 {
    width:550px;

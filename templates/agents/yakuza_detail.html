@@ -13,6 +13,13 @@
 
 	<p><strong>Alliés</strong> : {{ yakuza.friend }}</p>
 
+	{% load display_entities %}
+	{% display_entities yakuza %}
+
+	{% if yakuza.at_war %}
+		<p style="color:red;">Ce yakuza est en guerre.</p>
+	{% endif %}
+
 	{{ yakuza.description|markdown }}
 {% endblock %}
 

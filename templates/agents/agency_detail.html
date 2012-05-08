@@ -10,6 +10,8 @@
 	{{ agency.capacity_sabotage }} /
 	{{ agency.capacity_scandal }} /
 	{{ agency.capacity_protection }}</p>
+	<p><strong>Alliés</strong> : {{ agency.friend }}</p>
+	<p><strong>Ennemis</strong> : {{ agency.foe }}</p>
 
 	{{ agency.description|markdown }}
 {% endblock %}

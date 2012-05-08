@@ -12,10 +12,15 @@ et, parmi les Big Ten, beaucoup ont leurs compagnies, divisions et intérêts cl
 Toutes sont prêtes à se sauter à la gorge, que ce soit sous un prétexte d’honneur, de politique ou de bilan de fin de
 trimestre pour tenter de s’emparer du trésor inestimable qu’est Neo-Tokyo.</p>
 
+<h2>Liens</h2>
 <ul>
 {% for corporation in corporation_list %}
 	<li><a href="/corpos/{{ corporation.slug}}" title="{{ corporation.get_capacity_display }}">{{ corporation.name }}</a></li>
 {% endfor %}
 </ul>
+
+<h2>Récapitulatif</h2>
+{% load display_entities %}
+{% display_entities corporation_list %}
 
 {% endblock %}

@@ -5,16 +5,12 @@
 {% block h1 %}{{ yakuza.name }}{% endblock %}
 
 {% block content %}
-	<p>{{ yakuza.capacity_information }} /
-	{{ yakuza.capacity_datasteal }} /
-	{{ yakuza.capacity_sabotage }} /
-	{{ yakuza.capacity_scandal }} /
-	{{ yakuza.capacity_protection }}</p>
+	{% load display_entities %}
+	{% display_entities yakuza %}
 
 	<p><strong>Alliés</strong> : {{ yakuza.friend }}</p>
 
-	{% load display_entities %}
-	{% display_entities yakuza %}
+
 
 	{% if yakuza.at_war %}
 		<p style="color:red;">Ce yakuza est en guerre.</p>

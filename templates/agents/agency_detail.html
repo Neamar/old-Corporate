@@ -5,11 +5,9 @@
 {% block h1 %}{{ agency.name }}{% endblock %}
 
 {% block content %}
-	<p>{{ agency.capacity_information }} /
-	{{ agency.capacity_datasteal }} /
-	{{ agency.capacity_sabotage }} /
-	{{ agency.capacity_scandal }} /
-	{{ agency.capacity_protection }}</p>
+	{% load display_entities %}
+	{% display_entities agency %}
+
 	<p><strong>Alliés</strong> : {{ agency.friend }}</p>
 	<p><strong>Ennemis</strong> : {{ agency.foe }}</p>
 

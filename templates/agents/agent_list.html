@@ -4,7 +4,7 @@
 
 {% block content %}
 {% load display_description %}
-
+{% load display_entities %}
 <p>T'as besoin de types pour faire ton sale boulot ? Ils sont là pour toi.</p>
 
 <h2>Fixers</h2>
@@ -21,4 +21,13 @@
 <p>{% display_description "agency" %}</p>
 
 <p class="right">&rarr; <a href="/agents/agences/">Liste des agences</a></p>
+
+<h2>Récapitulatif</h2>
+<h3>Fixers</h3>
+{% display_entities fixer_list %}
+<h3>Yakuzas</h3>
+{% display_entities yakuza_list %}
+<h3>Agences</h3>
+{% display_entities agency_list %}
+
 {% endblock %}

@@ -5,11 +5,8 @@
 {% block h1 %}{{ fixer.name }}{% endblock %}
 
 {% block content %}
-	<p>{{ fixer.capacity_information }} /
-	{{ fixer.capacity_datasteal }} /
-	{{ fixer.capacity_sabotage }} /
-	{{ fixer.capacity_scandal }} /
-	{{ fixer.capacity_protection }}</p>
+	{% load display_entities %}
+	{% display_entities fixer %}
 
 	{{ fixer.description|markdown }}
 {% endblock %}

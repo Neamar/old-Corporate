@@ -1,10 +1,11 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic import DetailView, ListView
 from django.views.generic.simple import direct_to_template
+from corporate.models import AbleEntity
 from agents.models import Fixer, Yakuza, Agency
 
 urlpatterns = patterns('',
-	url(r'^$', direct_to_template, {'template': 'agents/agent_list.html'}),
+	url(r'^$', 'agents.views.index'),
 
 	#fixers
 	url(r'^fixers/$',

@@ -5,10 +5,8 @@
 {% block h1 %}{{ corporation.name }}{% endblock %}
 
 {% block content %}
-	<p>{{ corporation.capacity_information }} /
-	{{ corporation.capacity_datasteal }} /
-	{{ corporation.capacity_sabotage }} /
-	{{ corporation.capacity_scandal }}</p>
+	{% load display_entities %}
+	{% display_entities corporation %}
 
 	{{ corporation.description|markdown }}
 

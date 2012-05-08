@@ -1,6 +1,24 @@
 [
   {
     "pk": 1,
+    "model": "agents.fixer",
+    "fields": {
+      "description": "Sakura !",
+      "capacity_datasteal": 0,
+      "foe": "",
+      "capacity_information": 20,
+      "capacity_protection": 0,
+      "state": null,
+      "capacity_scandal": 30,
+      "capacity_sabotage": 0,
+      "type": "fixer",
+      "slug": "sakura",
+      "friend": "",
+      "name": "Sakura"
+    }
+  },
+  {
+    "pk": 1,
     "model": "agents.yakuza",
     "fields": {
       "description": "Les Watada-gumi est le type d\u2019organisation yakusa dont on a l\u2019habitude d\u2019entendre parler dans les films trid\u00e9os du dimanche matin : de vieux hommes d\u2019affaires en costume qui vous d\u00e9fient plus souvent avec un regard qu\u2019avec une \u00e9p\u00e9e. Depuis de nombreuses g\u00e9n\u00e9rations, la majorit\u00e9 des membres du clan est constitu\u00e9e de descendants \u00e9tant all\u00e9 \u00e0 l\u2019universit\u00e9 des familles yakusas.",
@@ -8,6 +26,7 @@
       "foe": "",
       "capacity_information": 10,
       "capacity_protection": 10,
+      "state": "at_war",
       "capacity_scandal": 20,
       "capacity_sabotage": 10,
       "type": "yakuza",
@@ -25,6 +44,7 @@
       "foe": "",
       "capacity_information": 10,
       "capacity_protection": 20,
+      "state": null,
       "capacity_scandal": 10,
       "capacity_sabotage": 10,
       "type": "yakuza",
@@ -42,6 +62,7 @@
       "foe": "",
       "capacity_information": 30,
       "capacity_protection": 0,
+      "state": null,
       "capacity_scandal": 0,
       "capacity_sabotage": 10,
       "type": "yakuza",
@@ -59,6 +80,7 @@
       "foe": "",
       "capacity_information": 10,
       "capacity_protection": 30,
+      "state": null,
       "capacity_scandal": 0,
       "capacity_sabotage": 20,
       "type": "yakuza",
@@ -76,6 +98,7 @@
       "foe": "Tous les nationalistes",
       "capacity_information": 20,
       "capacity_protection": 0,
+      "state": "closed",
       "capacity_scandal": 20,
       "capacity_sabotage": 10,
       "type": "agency",
@@ -93,6 +116,7 @@
       "foe": "Tous les r\u00e9formateurs",
       "capacity_information": 10,
       "capacity_protection": 20,
+      "state": null,
       "capacity_scandal": 0,
       "capacity_sabotage": 20,
       "type": "agency",

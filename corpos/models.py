@@ -28,3 +28,14 @@ class Corporation(AbleEntity):
 
 	def get_capacity_display(self):
 		return "i%s / d%s / s%s / t%s" % (self.capacity_information, self.capacity_datasteal, self.capacity_sabotage, self.capacity_scandal)
+
+	def current_asset(self):
+		return self.asset_set.order_by('-turn')[0].value
+
+class Asset(models.Model):
+	turn = models.PositiveSmallIntegerField()
+	corporation = models.ForeignKey(Corporation)
+	value = models.PositiveSmallIntegerField()
+
+	def __unicode__(self):
+		return 'Assets for ' + self.corporation.slug + ' at ' + str(self.turn) + ' (' + str(self.value) + ')'

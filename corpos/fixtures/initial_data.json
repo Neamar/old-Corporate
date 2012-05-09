@@ -208,5 +208,122 @@
       "slug": "yakashima",
       "name": "Yakashima"
     }
+  },
+  {
+    "pk": 1,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 10,
+      "corporation": 1
+    }
+  },
+  {
+    "pk": 2,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 1,
+      "value": 12,
+      "corporation": 1
+    }
+  },
+  {
+    "pk": 3,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 2,
+      "value": 18,
+      "corporation": 1
+    }
+  },
+  {
+    "pk": 4,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 10,
+      "corporation": 2
+    }
+  },
+  {
+    "pk": 5,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 11,
+      "corporation": 3
+    }
+  },
+  {
+    "pk": 6,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 8,
+      "corporation": 4
+    }
+  },
+  {
+    "pk": 7,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 17,
+      "corporation": 5
+    }
+  },
+  {
+    "pk": 8,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 4,
+      "corporation": 6
+    }
+  },
+  {
+    "pk": 9,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 5,
+      "corporation": 7
+    }
+  },
+  {
+    "pk": 10,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 7,
+      "corporation": 7
+    }
+  },
+  {
+    "pk": 11,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 11,
+      "corporation": 8
+    }
+  },
+  {
+    "pk": 12,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 3,
+      "corporation": 9
+    }
+  },
+  {
+    "pk": 13,
+    "model": "corpos.asset",
+    "fields": {
+      "turn": 0,
+      "value": 9,
+      "corporation": 10
+    }
   }
 ]

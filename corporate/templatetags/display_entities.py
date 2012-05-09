@@ -26,6 +26,7 @@ def display_entities(entities):
 		)
 	if isinstance(item_sample, (Corporation)):
 		attributes = (
+			('current_asset', 'Actifs'),
 			('capacity_information', 'Inf.'),
 			('capacity_datasteal', 'Data.'),
 			('capacity_sabotage', 'Sab.'),
@@ -44,6 +45,9 @@ def display_entities(entities):
 	for item in items:
 		displayable_item = [item]
 		for attribute in attributes:
+			attr = getattr(item, attribute[0])
+			if callable(attr):
+				attr = attr()
 			displayable_item.append(getattr(item, attribute[0]))
 		displayable_items.append(displayable_item)
 

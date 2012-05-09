@@ -53,6 +53,12 @@ td:first-child
    padding:0 20px;
 }
 
+td a
+{
+   color:black !important;
+   text-decoration:none;
+}
+
 #wrapper
 {
    width:550px;

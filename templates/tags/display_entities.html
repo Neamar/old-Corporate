@@ -1,3 +1,4 @@
+{% load entity_link %}
 <table class="prop_table">
 	<caption>Tableau de propriétés</caption>
 	<thead>
@@ -12,7 +13,7 @@
 	{% for item in items %}
 		<tr>
 		{% for property in item %}
-			<td>{{ property }}</td>
+			<td>{% entity_link property %}</td>
 		{% endfor %}
 		</tr>
 	{% endfor %}

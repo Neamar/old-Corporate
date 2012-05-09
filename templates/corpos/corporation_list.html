@@ -2,6 +2,32 @@
 {% block title %}Corporations{% endblock %}
 {% block h1 %}Liste des corporations{% endblock %}
 
+{% block head %}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+	var data = google.visualization.arrayToDataTable([
+		['Corporation', 'Actifs'],
+		{% for corporation in corporation_list %}
+			['{{ corporation }}', {{ corporation.current_asset }}],
+		{% endfor %}
+	]);
+
+	var options = {
+		title: 'Bourse',
+		backgroundColor: 'transparent',
+		pieSliceText: 'value',
+		chartArea:{width:"85%"}
+	};
+
+	var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+	chart.draw(data, options);
+  }
+</script>
+{% endblock %}
+
 {% block content %}
 <p>Personne ne sera surpris d’apprendre que les corporations ont une influence étendue à travers tout Neo-Tokyo,
 ni que les japanocorps MCT, Shiawase et Renraku sont les plus envahissantes.
@@ -23,4 +49,5 @@ trimestre pour tenter de s’emparer du trésor inestimable qu’est Neo-Tokyo.<
 {% load display_entities %}
 {% display_entities corporation_list %}
 
+<div id="chart_div" style="width: 530px; height: 400px;"></div>
 {% endblock %}

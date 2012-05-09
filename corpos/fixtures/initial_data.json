@@ -291,15 +291,6 @@
     }
   },
   {
-    "pk": 10,
-    "model": "corpos.asset",
-    "fields": {
-      "turn": 0,
-      "value": 7,
-      "corporation": 7
-    }
-  },
-  {
     "pk": 11,
     "model": "corpos.asset",
     "fields": {

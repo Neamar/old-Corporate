@@ -4,9 +4,38 @@
 {% block title %}{{ corporation.name}} | Corporation{% endblock %}
 {% block h1 %}{{ corporation.name }}{% endblock %}
 
+{% block head %}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+	var data = google.visualization.arrayToDataTable([
+		['Tour', 'Actifs'],
+		{% for asset in corporation.asset_set.all %}
+			[{{ asset.turn }}, {{ asset.value }}],
+		{% endfor %}
+	]);
+
+	var options = {
+		title: 'Cotation boursière',
+		backgroundColor: 'transparent',
+		theme: 'maximized',
+		pointSize: 4,
+		legend: 'none',
+	};
+
+	var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+	chart.draw(data, options);
+  }
+</script>
+{% endblock %}
+
 {% block content %}
 	{% load display_entities %}
 	{% display_entities corporation %}
+
+	<div id="chart_div" style="width: 530px; height: 300px;"></div>
 
 	{{ corporation.description|markdown }}
 

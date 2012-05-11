@@ -32,8 +32,11 @@ class Corporation(AbleEntity):
 	def get_capacity_display(self):
 		return "i%s / d%s / s%s / t%s" % (self.capacity_information, self.capacity_datasteal, self.capacity_sabotage, self.capacity_scandal)
 
+	_current_asset = -1
 	def current_asset(self):
-		return self.asset_set.order_by('-turn')[0].value
+		if self._current_asset == -1:
+			self._current_asset = self.asset_set.order_by('-turn')[0].value
+		return self._current_asset
 
 class Asset(models.Model):
 	turn = models.PositiveSmallIntegerField()

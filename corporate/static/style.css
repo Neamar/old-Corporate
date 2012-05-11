@@ -28,7 +28,6 @@ table caption
 tr, td, th
 {
    border:1px solid black;
-   text-align:center;
 }
 
 tbody tr:nth-child(odd)
@@ -41,16 +40,28 @@ td:not(:first-child)
    width:50px;
 }
 
-th:first-child
+.prop_table th:first-child
 {
    border-top:1px solid transparent;
    border-left:1px solid transparent;
 }
 
-td:first-child
+.prop_table td:first-child, td.important
 {
    font-weight:bold;
+   text-align:center;
    padding:0 20px;
+}
+
+.prop_table tr, th
+{
+   text-align:center;
+}
+
+.list_table tr ul
+{
+   list-style-type:none;
+   padding:0 5px;
 }
 
 td a

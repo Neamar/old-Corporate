@@ -23,8 +23,11 @@ class Corporation(AbleEntity):
 	origin = models.CharField(max_length="12", choices=CORPORATION_ORIGINS)
 	rank = models.CharField(max_length="3", choices=CORPORATION_RANKS)
 	on_first = models.TextField()
+	on_first_effect = models.TextField()
 	on_last = models.TextField()
+	on_last_effect = models.TextField()
 	on_crash = models.TextField()
+	on_crash_effect = models.TextField()
 
 	def get_capacity_display(self):
 		return "i%s / d%s / s%s / t%s" % (self.capacity_information, self.capacity_datasteal, self.capacity_sabotage, self.capacity_scandal)

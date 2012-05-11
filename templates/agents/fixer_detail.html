@@ -8,6 +8,10 @@
 	{% load display_entities %}
 	{% display_entities fixer %}
 
+	{% if fixer.foe %}
+		<p><strong>Ennemis</strong> : {{ fixer.foe }}</p>
+	{% endif %}
+	
 	{{ fixer.description|markdown }}
 {% endblock %}
 

@@ -16,6 +16,10 @@
 		<p style="color:red;">Ce yakuza est en guerre.</p>
 	{% endif %}
 
+	{% if yakuza.foster_type %}
+		<p><strong>{{ yakuza.foster_type|capfirst }}</strong> : {{ yakuza.foster_name }}</p>
+	{% endif %}
+
 	{{ yakuza.description|markdown }}
 {% endblock %}
 

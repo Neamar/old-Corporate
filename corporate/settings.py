@@ -124,7 +124,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.markup',
     'django.contrib.admin',
-    'django_extensions',
     # Modules
     'corporate',
     'agents',

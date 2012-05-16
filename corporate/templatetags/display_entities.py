@@ -6,6 +6,9 @@ from joueurs.models import Player
 
 register = template.Library()
 
+def get_fixer_thumbnail(fixer):
+	return '<img src="' + fixer.image + '" alt="' + fixer.name + '" class="thumbnail" />'
+
 @register.inclusion_tag('tags/display_entities.html')
 def display_entities(entities):
 	# Handle case with only one item
@@ -16,7 +19,16 @@ def display_entities(entities):
 
 	# Which attributes should be displayed?
 	item_sample = items[0]
-	if isinstance(item_sample, (Yakuza, Agency, Fixer)):
+	if isinstance(item_sample, (Fixer)):
+		attributes = (
+			(get_fixer_thumbnail, 'Img'),
+			('capacity_information', 'Inf.'),
+			('capacity_datasteal', 'Data.'),
+			('capacity_sabotage', 'Sab.'),
+			('capacity_scandal', 'Scan.'),
+			('capacity_protection', 'Pro.'),
+		)
+	if isinstance(item_sample, (Yakuza, Agency)):
 		attributes = (
 			('capacity_information', 'Inf.'),
 			('capacity_datasteal', 'Data.'),
@@ -45,10 +57,14 @@ def display_entities(entities):
 	for item in items:
 		displayable_item = [item]
 		for attribute in attributes:
-			attr = getattr(item, attribute[0])
+			if callable(attribute[0]):
+				attr = attribute[0](item)
+			else:
+				attr = getattr(item, attribute[0])
+
 			if callable(attr):
 				attr = attr()
-			displayable_item.append(getattr(item, attribute[0]))
+			displayable_item.append(attr)
 		displayable_items.append(displayable_item)
 
 	return {'items': displayable_items, 'attributes': attributes}

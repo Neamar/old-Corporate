@@ -22,6 +22,8 @@ class Agent(AbleEntity):
 
 class Fixer(Agent):
 	states = ('alive', 'dead')
+	image = models.CharField(max_length="50")
+
 	def get_state(self):
 		if(self.state == ''):
 			return states[0]
@@ -29,7 +31,7 @@ class Fixer(Agent):
 class Yakuza(Agent):
 	foster_type = models.CharField(max_length=6, null=True, blank=True, choices=YAKUZA_FOSTER_TYPES)
 	foster_name = models.ForeignKey(Player, null=True, blank=True)
-	
+
 	def at_war(self):
 		return (self.state == 'at_war')
 

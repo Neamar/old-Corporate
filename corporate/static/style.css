@@ -13,6 +13,17 @@ p.right
    text-align:right;
 }
 
+img.entity
+{
+   margin:auto;
+   display:block;
+}
+
+img.thumbnail
+{
+   height:2em;
+}
+
 table
 {
    margin:auto;

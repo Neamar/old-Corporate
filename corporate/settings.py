@@ -3,7 +3,7 @@ import os
 # Django settings for corporate project.
 BASE_DIR = os.path.dirname(os.path.abspath(__file__)) + "/.."
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -125,6 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.markup',
     'django.contrib.admin',
+    'django_extensions',
     # Modules
     'corporate',
     'agents',

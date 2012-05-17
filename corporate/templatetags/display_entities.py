@@ -21,7 +21,7 @@ def display_entities(entities):
 	item_sample = items[0]
 	if isinstance(item_sample, (Fixer)):
 		attributes = (
-			(get_fixer_thumbnail, 'Img'),
+			#(get_fixer_thumbnail, 'Img'),
 			('capacity_information', 'Inf.'),
 			('capacity_datasteal', 'Data.'),
 			('capacity_sabotage', 'Sab.'),

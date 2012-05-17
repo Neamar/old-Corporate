@@ -1,10 +1,15 @@
+{% extends "template.html" %}
 {% load markup %}
 
-<h2 id="{{ corporation.slug }}">{{ corporation.name }}</h2>
+{% block title %}{{ corporation.name}} | Corporation{% endblock %}
+{% block h1 %}{{ corporation.name }}{% endblock %}
 
+{% block head %}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
-google.setOnLoadCallback(drawChart{{ corporation.slug }});
-function drawChart{{ corporation.slug }}() {
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
 	var data = google.visualization.arrayToDataTable([
 		['Tour', 'Actifs'],
 		{% for asset in corporation.asset_set.all %}
@@ -20,25 +25,34 @@ function drawChart{{ corporation.slug }}() {
 		legend: 'none',
 	};
 
-	var chart = new google.visualization.LineChart(document.getElementById('chart_{{ corporation.slug}}'));
-	chart.draw(data, options);$
+	var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+	chart.draw(data, options);
 }
 </script>
+{% endblock %}
 
-{% display_entities corporation %}
+{% block content %}
+	{% load display_entities %}
+	{% display_entities corporation %}
 
-<div id="chart_{{ corporation.slug }}" style="width: 530px; height: 300px;"></div>
+	<div id="chart_div" style="width: 530px; height: 300px;"></div>
 
-{{ corporation.description|markdown }}
+	{{ corporation.description|markdown }}
 
-<h3>En tête</h3>
-{{ corporation.on_first|markdown }}
-{{ corporation.on_first_effect|markdown }}
+	<h2>En tête</h2>
+	{{ corporation.on_first|markdown }}
+	{{ corporation.on_first_effect|markdown }}
 
-<h3>En queue</h3>
-{{ corporation.on_last|markdown }}
-{{ corporation.on_last_effect|markdown }}
+	<h2>En queue</h2>
+	{{ corporation.on_last|markdown }}
+	{{ corporation.on_last_effect|markdown }}
 
-<h3>En crash</h3>
-{{ corporation.on_crash|markdown }}
-{{ corporation.on_crash_effect|markdown }}
+	<h2>En crash</h2>
+	{{ corporation.on_crash|markdown }}
+	{{ corporation.on_crash_effect|markdown }}
+{% endblock %}
+
+{% block end %}
+	{{ block.super }} |
+	<a href="/corpos/">Retour à la liste des corpos</a>
+{% endblock %}

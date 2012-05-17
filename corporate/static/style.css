@@ -24,6 +24,11 @@ img.thumbnail
    height:2em;
 }
 
+div.spacer
+{
+   margin:90% 0;
+}
+
 table
 {
    margin:auto;

@@ -1,22 +1,12 @@
-{% extends "template.html" %}
 {% load markup %}
 
-{% block title %}{{ fixer.name}} | Fixer{% endblock %}
-{% block h1 %}{{ fixer.name }}{% endblock %}
+<h3 id="{{ fixer.slug }}">{{ fixer.name }}</h3>
+<img src="{{ fixer.image }}" alt="{{ fixer.name }}" class="entity" />
 
-{% block content %}
-	<img src="{{ fixer.image }}" alt="{{ fixer.name }}" class="entity" />
+{% display_entities fixer %}
+{% if fixer.foe %}
+	<p><strong>Ennemis</strong> : {{ fixer.foe }}</p>
+{% endif %}
 
-	{% display_entities fixer %}
+{{ fixer.description|markdown }}
 
-	{% if fixer.foe %}
-		<p><strong>Ennemis</strong> : {{ fixer.foe }}</p>
-	{% endif %}
-
-	{{ fixer.description|markdown }}
-{% endblock %}
-
-{% block end %}
-	{{ block.super }} |
-	<a href="/agents/fixers/">Retour à la liste des fixers</a>
-{% endblock %}

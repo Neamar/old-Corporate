@@ -6,5 +6,4 @@ urlpatterns = patterns('',
 	url(r'^$',
 		ListView.as_view(
 			queryset=Player.objects.all())),
-	url(r'^(?P<slug>[a-z-]+)$', 'joueurs.views.detail'),
 )

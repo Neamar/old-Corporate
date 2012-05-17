@@ -1,29 +1,18 @@
-{% extends "template.html" %}
 {% load markup %}
 
-{% block title %}{{ yakuza.name}} | Fixer{% endblock %}
-{% block h1 %}{{ yakuza.name }}{% endblock %}
+<h3 id="{{ yakuza.slug }}">{{ yakuza.name }}</h3>
+{% display_entities yakuza %}
 
-{% block content %}
-	{% load display_entities %}
-	{% display_entities yakuza %}
-
-	<p><strong>Alliés</strong> : {{ yakuza.friend }}</p>
+<p><strong>Alliés</strong> : {{ yakuza.friend }}</p>
 
 
 
-	{% if yakuza.at_war %}
-		<p style="color:red;">Ce yakuza est en guerre.</p>
-	{% endif %}
+{% if yakuza.at_war %}
+	<p style="color:red;">Ce yakuza est en guerre.</p>
+{% endif %}
 
-	{% if yakuza.foster_type %}
-		<p><strong>{{ yakuza.foster_type|capfirst }}</strong> : {{ yakuza.foster_name }}</p>
-	{% endif %}
+{% if yakuza.foster_type %}
+	<p><strong>{{ yakuza.foster_type|capfirst }}</strong> : {{ yakuza.foster_name }}</p>
+{% endif %}
 
-	{{ yakuza.description|markdown }}
-{% endblock %}
-
-{% block end %}
-	{{ block.super }} |
-	<a href="/agents/yakuzas/">Retour à la liste des yakuzas</a>
-{% endblock %}
+{{ yakuza.description|markdown }}

@@ -1,20 +1,10 @@
-{% extends "template.html" %}
 {% load markup %}
 
-{% block title %}{{ agency.name}} | Agence{% endblock %}
-{% block h1 %}{{ agency.name }}{% endblock %}
+<h3 id="{{ agency.slug }}">{{ agency.name }}</h3>
+{% load display_entities %}
+{% display_entities agency %}
 
-{% block content %}
-	{% load display_entities %}
-	{% display_entities agency %}
+<p><strong>Alliés</strong> : {{ agency.friend }}</p>
+<p><strong>Ennemis</strong> : {{ agency.foe }}</p>
 
-	<p><strong>Alliés</strong> : {{ agency.friend }}</p>
-	<p><strong>Ennemis</strong> : {{ agency.foe }}</p>
-
-	{{ agency.description|markdown }}
-{% endblock %}
-
-{% block end %}
-	{{ block.super }} |
-	<a href="/agents/agences/">Retour à la liste des agences</a>
-{% endblock %}
+{{ agency.description|markdown }}

@@ -1,0 +1,48 @@
+{% extends "template.html" %}
+{% load markup %}
+
+{% block title %}Récapitulatif{% endblock %}
+{% block h1 %}Tableaux récapitulatifs{% endblock %}
+
+{% block content %}
+
+<h2>Joueurs</h2>
+{% display_entities player_list %}
+
+<h2>Agents</h2>
+<h3>Fixers</h3>
+{% display_entities fixer_list %}
+
+<h3>Yakuzas</h3>
+{% display_entities yakuza_list %}
+
+<h3>Agences</h3>
+{% display_entities agency_list %}
+
+<h2>Corporations</h2>
+<h3>Corporations</h3>
+{% display_entities corporation_list %}
+
+<h3>Effets</h3>
+<table class="list_table">
+	<thead>
+		<tr>
+			<th>Première</th>
+			<th>Dernière</th>
+			<th>Crash</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for corporation in corporation_list %}
+		<tr>
+			<td colspan="3" class="important"><a href="/corpos/{{ corporation.slug}}" title="{{ corporation.get_capacity_display }}">{{ corporation.name }}</a></td>
+		</tr>
+		<tr>
+			<td style="width:33%; text-align:left;">{{ corporation.on_first_effect|markdown }}</td>
+			<td style="width:33%; text-align:left;">{{ corporation.on_last_effect|markdown }}</td>
+			<td style="width:33%; text-align:left; font-size:75%;">{{ corporation.on_crash_effect|markdown }}</td>
+		</tr>
+{% endfor %}
+	</tbody>
+</table>
+{% endblock %}

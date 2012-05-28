@@ -21,6 +21,7 @@ class Agent(AbleEntity):
 	private_friend = models.CharField(max_length="200", null=True, blank=True)
 	foe = models.CharField(max_length="200", null=True, blank=True)
 	private_foe = models.CharField(max_length="200", null=True, blank=True)
+	loyalties = models.TextField(null=True, blank=True)
 	state = models.CharField(max_length="10", null=True, blank=True, choices=AGENT_STATES)
 
 class Fixer(Agent):

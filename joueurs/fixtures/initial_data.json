@@ -4,12 +4,15 @@
     "model": "joueurs.player",
     "fields": {
       "description": "I'm the king.",
-      "honor": 6,
-      "pc": "R\u00e9mi",
-      "citizen": null,
-      "mail": "laedisu@hotmail.com",
-      "type": "player",
+      "creation_constraints": "",
+      "political_strength": 0,
+      "influence": 1,
       "slug": "wizae",
+      "pc": "R\u00e9mi",
+      "political_position": "nc",
+      "citizen": null,
+      "type": "player",
+      "honor": 6,
       "name": "Wiza\u00e9"
     }
   }

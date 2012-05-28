@@ -9,6 +9,9 @@ register = template.Library()
 def get_fixer_thumbnail(fixer):
 	return '<img src="' + fixer.image + '" alt="' + fixer.name + '" class="thumbnail" />'
 
+def get_political_strength(player):
+	return str(player.political_strength) + player.political_position
+
 @register.inclusion_tag('tags/display_entities.html')
 def display_entities(entities):
 	# Handle case with only one item
@@ -49,7 +52,8 @@ def display_entities(entities):
 		attributes = (
 			('pc', 'Joueur'),
 			('honor', 'Honneur'),
-			('citizen', 'Citoyen'),
+			('influence', 'Influence'),
+			(get_political_strength, 'Pol.'),
 		)
 
 	# Compute attributes

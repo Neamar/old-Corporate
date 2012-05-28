@@ -37,8 +37,10 @@ function drawChart() {
 
 	<div id="chart_div" style="width: 530px; height: 300px;"></div>
 
-	<strong>Position politique</strong> : {{ corporation.get_political_position_display }}<br />
-	<strong>Origine</strong> : {{ corporation.get_origin_display }}
+<ul>
+	<li><strong>Position politique</strong> : {{ corporation.get_political_position_display }}<br />
+	<li><strong>Origine</strong> : {{ corporation.get_origin_display }}
+</ul>
 
 	{{ corporation.description|markdown }}
 

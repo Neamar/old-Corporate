@@ -4,9 +4,12 @@
 <img src="{{ fixer.image }}" alt="{{ fixer.name }}" class="entity" />
 
 {% display_entities fixer %}
-{% if fixer.foe %}
-	<p><strong>Ennemis</strong> : {{ fixer.foe }}</p>
+<ul>
+{% if fixer.friend%}
+	<li><strong>Alliés</strong> : {{ fixer.friend }}
 {% endif %}
-
+{% if fixer.foe %}
+	<li><strong>Ennemis</strong> : {{ fixer.foe }}
+{% endif %}
+</ul>
 {{ fixer.description|markdown }}
-

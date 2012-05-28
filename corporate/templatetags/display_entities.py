@@ -10,7 +10,10 @@ def get_fixer_thumbnail(fixer):
 	return '<img src="' + fixer.image + '" alt="' + fixer.name + '" class="thumbnail" />'
 
 def get_political_strength(player):
-	return str(player.political_strength) + player.political_position
+	if player.political_position == 'nc':
+		return '&empty;'
+	else:
+		return str(player.political_strength) + player.political_position[0:3]
 
 @register.inclusion_tag('tags/display_entities.html')
 def display_entities(entities):
@@ -41,7 +44,7 @@ def display_entities(entities):
 		)
 	if isinstance(item_sample, (Corporation)):
 		attributes = (
-			('current_asset', 'Actifs'),
+			('current_asset', 'Actifs', 'bold'),
 			('capacity_information', 'Inf.'),
 			('capacity_datasteal', 'Data.'),
 			('capacity_sabotage', 'Sab.'),
@@ -53,7 +56,7 @@ def display_entities(entities):
 			('pc', 'Joueur'),
 			('honor', 'Honneur'),
 			('influence', 'Influence'),
-			(get_political_strength, 'Pol.'),
+			(get_political_strength, 'Politique'),
 		)
 
 	# Compute attributes
@@ -68,6 +71,9 @@ def display_entities(entities):
 
 			if callable(attr):
 				attr = attr()
+			if len(attribute) == 3:
+				attr = "<strong>" + str(attr) + "</strong>"
+
 			displayable_item.append(attr)
 		displayable_items.append(displayable_item)
 

@@ -1,9 +1,13 @@
 {% load markup %}
+{% load entity_link %}
 
 <h2 id="{{ player.slug }}">{{ player.name }}</h2>
-<p><strong>E-mail</strong> : <a href="mailto:{{ player.mail }}">{{ player.mail }}</a></p>
-
+<ul>
+	<li><strong>Citoyenneté corpo</strong> : {% entity_link player.citizen %}
+	<li><strong>Contraintes</strong> : {{ player.creation_constraints }}
+</ul>
 {{ player.description|markdown }}
+
 
 <h2>Actions possédées</h2>
 <table>

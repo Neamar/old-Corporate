@@ -1,9 +1,11 @@
+# coding=utf-8
+
 from django.db import models
 from corporate.models import AbleEntity
 
 CORPORATION_POLITICAL_POSITIONS = (
-	('nc', 'non pertinent'),
-	('reformateur', 'reformateur'),
+	('nc', 'non aligné'),
+	('reformateur', 'réformateur'),
 	('nationaliste', 'nationaliste'),
 )
 

@@ -37,17 +37,20 @@ function drawChart() {
 
 	<div id="chart_div" style="width: 530px; height: 300px;"></div>
 
+	<strong>Position politique</strong> : {{ corporation.get_political_position_display }}<br />
+	<strong>Origine</strong> : {{ corporation.get_origin_display }}
+
 	{{ corporation.description|markdown }}
 
-	<h2>En tête</h2>
+	<h2>Effet premier</h2>
 	{{ corporation.on_first|markdown }}
 	{{ corporation.on_first_effect|markdown }}
 
-	<h2>En queue</h2>
+	<h2>Effet dernier</h2>
 	{{ corporation.on_last|markdown }}
 	{{ corporation.on_last_effect|markdown }}
 
-	<h2>En crash</h2>
+	<h2>Effet crash</h2>
 	{{ corporation.on_crash|markdown }}
 	{{ corporation.on_crash_effect|markdown }}
 {% endblock %}

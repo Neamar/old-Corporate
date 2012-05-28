@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'corpos',
     'docs',
     'joueurs',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

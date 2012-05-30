@@ -68,5 +68,25 @@
       "slug": "ordre-de-resolution-des-actions",
       "title": "Ordre de r\u00e9solution des actions"
     }
+  },
+  {
+    "pk": 8,
+    "model": "docs.rule",
+    "fields": {
+      "content": "(bient\u00f4t)",
+      "section": "creation",
+      "slug": "creation-de-personnages",
+      "title": "Cr\u00e9ation de personnages"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "docs.rule",
+    "fields": {
+      "content": "## Informations publiques\r\nToutes les informations publiques sont directement accessibles, \u00e0 tout moment.\r\nCeci comprend :\r\n\r\n* les pr\u00e9sentes r\u00e8gles\r\n* les informations sur les corporations\r\n* les actifs des diff\u00e9rentes corpos\r\n* les informations sur les agents\r\n* l'\u00e9tat des fixers et des yakuzas, leurs ennemis, leurs *kobuns* et *oyabuns*\r\n* l'honneur, l'influence et la citoyennet\u00e9 corporatiste des PJs\r\n* les actions poss\u00e9d\u00e9es par chacun\r\n* les pions politiques et l'alignement des PJs\r\n\r\nToutes ces informations publiques sont disponibles sur le site du Corporate Game, [corporate.edevoir.com](http://corporate.edevoir.com).\r\n\r\nDe plus, des messages publics peuvent \u00eatre \u00e9mis apr\u00e8s chaque tour, justifiant certaines des modifications du jeu.\r\n\r\n## Communication\r\nEn pratique, la plupart des \u00e9changes se feront par forum sur [forum.corporate.edevoir.com](http://forum.corporate.edevoir.com).\r\n\r\n### MPs d'ordre\r\nUn trimestre \u00e0 Neo Tokyo est mod\u00e9lis\u00e9 par une journ\u00e9e de jeu. Celle-ci d\u00e9bute \u00e0 15h pour finir \u00e0 13h le lendemain.\r\n\r\nPour chaque trimestre de jeu, le PJ doit envoyer un message priv\u00e9 \u00e0 l'administrateur (GOD)\r\nAttention, ce MP doit absolument \u00eatre envoy\u00e9 avant 13h (cachet de la poste faisant foi). Au-del\u00e0, le tour est consid\u00e9r\u00e9 comme \"forfait\" pour le PJ.\r\n\r\nLe forum permet de modifier le MP apr\u00e8s son envoi, tant qu'il n'est pas 13h.\r\n\r\nAfin de faciliter les choses, ce MP doit respecter la structure suivante :\r\n\r\nSujet du MP : #{num\u00e9ro de tour} - {nom du PJ}\r\n\r\n<pre>\r\nBourse (pour chaque point d'influence corporatiste)\r\nActif en hausse :  {corporation}\r\n- Pr\u00e9vision de positionnement : {pr\u00e9vision}\r\nActif en baisse : {corporation}\r\n- Pr\u00e9vision de positionnement : {pr\u00e9vision}\r\nOrdres \u00e0 passer\r\n- Ordre : run avec {fixer}, de type {type}, pay\u00e9e {co\u00fbt}\r\n\tpour une chance de r\u00e9ussite de {pourcentage}\r\n- Ordre : jouer le Jeu du Dragon, investissement de {co\u00fbt}\r\n- Ordre : recrutement de troupes corpos\r\n- Ordre : faire passer {PJ} dans les alli\u00e9s de {fixer}\r\n- Ordre : achat d'action de {corpo}\r\n- etc.\r\nInformations compl\u00e9mentaires\r\nInformations compl\u00e9mentaires roleplay / gameplay\r\nSolde restant en fin de tour : {solde}\r\n</pre>\r\n\r\nEn guise de pense-b\u00eate, voici un [tableau d'ordres listant les diff\u00e9rents param\u00e8tres et co\u00fbts](https://docs.google.com/spreadsheet/ccc?key=0ApZXXCCC0GsvdENXbXpHdm1YYlZEYVc2eTRhRGtGOVE).\r\n\r\n## \u00c9changes de n\u00e9gociations\r\nCorporate game n'aurait aucune saveur s'il n'y avait pas les \u00e9changes entre PJs, qui am\u00e8neront in\u00e9luctablement \u00e0 des trahisons  et des alliances branlantes. N'oubliez pas qu'un seul PJ peut gagner ! Les \u00e9changes par forum ou MP sont donc importants, entre deux ou plusieurs PJs. Les n\u00e9gociations par t\u00e9l\u00e9phone ou tout autre moyen sont bien entendu envisageables : \u00e0 chacun de communiquer sur ses pr\u00e9f\u00e9rences de contact.\r\n\r\n## MP de r\u00e9solution\r\nUne fois toutes les actions r\u00e9solues, le MJ met \u00e0 jour les documents publics et envoie \u00e0 chacun une mise \u00e0 jour vis \u00e0 vis de ses actions.",
+      "section": "pratique",
+      "slug": "en-pratique",
+      "title": "En pratique ?"
+    }
   }
 ]

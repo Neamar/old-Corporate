@@ -9,11 +9,6 @@ AGENT_STATES = (
 	('closed', 'clos'),
 )
 
-YAKUZA_FOSTER_TYPES = (
-	('kobun', 'obun'),
-	('oyabun', 'oyabun'),
-)
-
 class Agent(AbleEntity):
 	class Meta:
 		abstract = True

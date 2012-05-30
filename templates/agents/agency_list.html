@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block title %}Partis{% endblock %}
+{% block h1 %}Liste des partis politiques{% endblock %}
+
+{% block content %}
+	{% display_entities agency_list %}
+
+	{% for agency in agency_list %}
+		{% include "agents/agency_detail.html" %}
+	{% endfor %}
+
+{% endblock %}

@@ -7,7 +7,6 @@
 <ul>
 	<li><a href="#fixer">Les fixers</a></li>
 	<li><a href="#yakuza">Les yakuzas</a></li>
-	<li><a href="#agence">Les agences politiques</a></li>
 </ul>
 
 <h2 id="fixer">Fixers</h2>
@@ -39,25 +38,6 @@
 
 {% for yakuza in yakuza_list %}
 	{% include "agents/yakuza_detail.html" %}
-{% endfor %}
-<div class="spacer"></div>
-
-
-
-
-
-
-
-
-
-
-
-<h2 id="agence">Partis</h2>
-<p>On pourrait attendre des agences politiques une probité sans faille et une fidélité à toute épreuve. S'il n'y a pas grand chose à redire sur ce second point, le premier est plus complexe, et ils n'accepteront de se faire graisser la patte que par les membres les plus influents de leur parti.</p>
-{% display_entities agency_list %}
-
-{% for agency in agency_list %}
-	{% include "agents/agency_detail.html" %}
 {% endfor %}
 <div class="spacer"></div>
 

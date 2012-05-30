@@ -33,14 +33,12 @@ class Fixer(Agent):
 			return states[0]
 
 class Yakuza(Agent):
-	foster_type = models.CharField(max_length=6, null=True, blank=True, choices=YAKUZA_FOSTER_TYPES)
-	foster_name = models.ForeignKey(Player, null=True, blank=True)
-
 	def at_war(self):
 		return (self.state == 'at_war')
 
 class Agency(Agent):
-	pass
+	political_side = models.CharField(max_length="20")
+	political_description = models.TextField()
 
 class CROC(Agent):
 	player = models.ForeignKey(Player)

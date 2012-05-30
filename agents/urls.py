@@ -18,7 +18,7 @@ urlpatterns = patterns('',
 			queryset=Yakuza.objects.all())),
 
 	#agences
-	url(r'^agences/$',
+	url(r'^partis/$',
 		ListView.as_view(
 			queryset=Agency.objects.all())),
 )

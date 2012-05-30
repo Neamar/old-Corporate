@@ -1,10 +1,14 @@
 {% load markup %}
 
-<h3 id="{{ agency.slug }}">{{ agency.name }}</h3>
+<h3 id="{{ agency.slug }}">Parti {{ agency.political_side }}</h3>
+{{ agency.political_description|markdown }}
+
 {% load display_entities %}
 {% display_entities agency %}
 
-<p><strong>Alliés</strong> : {{ agency.friend }}</p>
-<p><strong>Ennemis</strong> : {{ agency.foe }}</p>
+<ul>
+	<li><strong>Alliés</strong> : {{ agency.friend }}
+	<li><strong>Ennemis</strong> : {{ agency.foe }}
+</ul>
 
 {{ agency.description|markdown }}

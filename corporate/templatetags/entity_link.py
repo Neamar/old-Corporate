@@ -8,6 +8,8 @@ register = template.Library()
 
 @register.simple_tag
 def entity_link(item):
+	if isinstance(item, Agency):
+		return '<a href="/agents/partis/#' + item.slug + '" title="' + item.get_capacity_display() + '">' + item.__unicode__() + '</a>'
 	if isinstance(item, Agent):
 		return '<a href="/agents/#' + item.slug + '" title="' + item.get_capacity_display() + '">' + item.__unicode__() + '</a>'
 	if isinstance(item, Corporation):

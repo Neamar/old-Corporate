@@ -112,6 +112,7 @@ td a
    position:relative;
    left:-50%;
    font-family:Audiowide, cursive;
+   text-shadow:0.1em 0 0.2em white;
 }
 
 #sidebar ul

@@ -41,3 +41,7 @@ class Yakuza(Agent):
 
 class Agency(Agent):
 	pass
+
+class CROC(Agent):
+	player = models.ForeignKey(Player)
+	level = models.PositiveSmallIntegerField()

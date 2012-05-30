@@ -3,6 +3,16 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Audiowide|Syncopate' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{{ STATIC_URL }}/style.css" />
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+		  $("#toc").accordion({autoHeight:false});
+		});
+	</script>
+
 	{% block head %}{% endblock %}
 	<title>{% block title %}Corporate game{% endblock %}</title>
 </head>
@@ -30,5 +40,63 @@
 			{% block end %}<a href="#">&uarr;</a>{% endblock %}
 		</div>
 	</div>
+
+
+{% load entity_link %}
+<div id="toc">
+	<h3><a href="#">Règles</a></h3>
+	<div>
+	<ul>
+		<li>Règles</li>
+		<li>Récapitulatif</li>
+	</ul>
+	</div>
+	<h3><a href="#">Corporations</a></h3>
+	<div>
+	<ul>
+		<li><a href="/corpos/evo" title="i10 / d20 / s20 / t0">Evo</a></li>
+		<li><a href="/corpos/horizon" title="i0 / d20 / s10 / t20">Hisato-Turner Broadcasting</a></li>
+		<li><a href="/corpos/mct" title="i10 / d10 / s20 / t10">Mitsuhama Computer Technology</a></li>
+		<li><a href="/corpos/monobe" title="i10 / d10 / s10 / t20">Monobe International</a></li>
+		<li><a href="/corpos/neonet" title="i10 / d20 / s10 / t10">NeoNET TransAsie</a></li>
+		<li><a href="/corpos/nct" title="i30 / d10 / s10 / t0">Nippon Credit and Trust</a></li>
+		<li><a href="/corpos/renraku" title="i20 / d20 / s0 / t10">Renraku Computer Systems</a></li>
+		<li><a href="/corpos/shiawase" title="i10 / d0 / s10 / t30">Shiawase</a></li>
+		<li><a href="/corpos/wuxing" title="i20 / d10 / s10 / t10">Prosperity Development Corporation</a></li>
+		<li><a href="/corpos/yakashima" title="i10 / d0 / s20 / t20">Yakashima</a></li>
+	</ul>
+	</div>
+	<h3><a href="#">Agents</a></h3>
+	<div>
+		<ul>
+			<li>Fixers<ul>
+				<li><a href="/agents/#sakura" title="i20 / d0 / s10 / t30 / p0">Sakura</a></li>
+				<li><a href="/agents/#kuro-fuuga" title="i10 / d10 / s10 / t0 / p30">Kuro-Fuuga</a></li>
+				<li><a href="/agents/#maboroshi" title="i10 / d20 / s30 / t0 / p0">Maboroshi</a></li>
+				<li><a href="/agents/#kimiko" title="i10 / d20 / s10 / t10 / p10">Kimiko</a></li>
+				<li><a href="/agents/#inoshishi-le-gobelin" title="i10 / d10 / s10 / t10 / p20">Inoshishi "le gobelin"</a></li>
+				<li><a href="/agents/#datenshi" title="i30 / d10 / s0 / t20 / p0">Datenshi</a></li>
+				<li><a href="/agents/#tsuchigumo" title="i10 / d30 / s0 / t10 / p10">Tsuchigumo</a></li>
+				<li><a href="/agents/#nagata" title="i0 / d10 / s20 / t10 / p20">Nagata</a></li>
+				<li><a href="/agents/#vrijbuiter" title="i10 / d10 / s20 / t10 / p10">Vrijbuiter</a></li>
+				<li><a href="/agents/#kekyan" title="i10 / d10 / s10 / t20 / p10">Kekyan</a></li>
+			</ul></li>
+			<li>Yakuzas<ul>
+				<li><a href="/agents/#watada-gumi" title="i10 / d10 / s10 / t20 / p10">Watada-gumi</a></li>
+				<li><a href="/agents/#mita-gumi" title="i10 / d10 / s10 / t10 / p20">Mita-gumi</a></li>
+				<li><a href="/agents/#wanibuchi-gumi" title="i30 / d20 / s10 / t0 / p0">Wanibuchi-gumi</a></li>
+				<li><a href="/agents/#kodachi-gumi" title="i10 / d0 / s20 / t0 / p30">Kodachi-gumi</a></li>
+			</ul></li>
+			<li>Agences<ul>
+				<li><a href="/agents/#maison-imperiale" title="i20 / d10 / s10 / t20 / p0">Maison Impériale</a></li>
+				<li><a href="/agents/#bureau-de-la-marine" title="i10 / d10 / s20 / t0 / p20">Bureau de la Marine</a></li>
+			</ul></li>
+		</ul>
+	</div>
+	<h3><a href="#">Joueurs</a></h3>
+		<ul>
+			<li>Dès que possible ;)</li>
+		</ul>
+</div>
 </body>
 </html>

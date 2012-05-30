@@ -92,6 +92,20 @@ td a
    margin:auto;
 }
 
+#toc
+{
+   position:fixed;
+   right:0;
+   width:230px;
+   top:0;
+   font-size:80%;
+}
+
+#toc div.ui-accordion-content
+{
+   padding-left:0
+}
+
 #sidebar
 {
    float:right;

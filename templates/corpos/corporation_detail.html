@@ -18,7 +18,7 @@ function drawChart() {
 	]);
 
 	var options = {
-		title: 'Cotation boursière',
+		title: 'Actifs',
 		backgroundColor: 'transparent',
 		theme: 'maximized',
 		pointSize: 4,
@@ -37,24 +37,18 @@ function drawChart() {
 
 	<div id="chart_div" style="width: 530px; height: 300px;"></div>
 
-<ul>
-	<li><strong>Position politique</strong> : {{ corporation.get_political_position_display }}<br />
-	<li><strong>Origine</strong> : {{ corporation.get_origin_display }}
-</ul>
+	<p>{{ corporation.get_origin_display|capfirst }} {{ corporation.get_political_position_display }}.</p>
 
 	{{ corporation.description|markdown }}
 
 	<h2>Effet premier</h2>
 	{{ corporation.on_first|markdown }}
-	{{ corporation.on_first_effect|markdown }}
 
 	<h2>Effet dernier</h2>
 	{{ corporation.on_last|markdown }}
-	{{ corporation.on_last_effect|markdown }}
 
 	<h2>Effet crash</h2>
 	{{ corporation.on_crash|markdown }}
-	{{ corporation.on_crash_effect|markdown }}
 {% endblock %}
 
 {% block end %}

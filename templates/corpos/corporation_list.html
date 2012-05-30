@@ -43,28 +43,4 @@ trimestre pour tenter de s’emparer du trésor inestimable qu’est Neo-Tokyo.<
 {% display_entities corporation_list %}
 
 <div id="chart_div" style="width: 530px; height: 400px;"></div>
-
-<h2>Effets</h2>
-<table class="list_table">
-	<thead>
-		<tr>
-			<th>Première</th>
-			<th>Dernière</th>
-			<th>Crash</th>
-		</tr>
-	</thead>
-	<tbody>
-{% for corporation in corporation_list %}
-		<tr>
-			<td colspan="3" class="important"><a href="/corpos/{{ corporation.slug}}" title="{{ corporation.get_capacity_display }}">{{ corporation.name }}</a></td>
-		</tr>
-		<tr>
-			<td style="width:33%; text-align:left;">{{ corporation.on_first_effect|markdown }}</td>
-			<td style="width:33%; text-align:left;">{{ corporation.on_last_effect|markdown }}</td>
-			<td style="width:33%; text-align:left; font-size:75%;">{{ corporation.on_crash_effect|markdown }}</td>
-		</tr>
-{% endfor %}
-	</tbody>
-</table>
-
 {% endblock %}

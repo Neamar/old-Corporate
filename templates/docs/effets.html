@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% load markup %}
+
+{% block title %}Effets des corporations{% endblock %}
+{% block h1 %}Effets des corporations{% endblock %}
+
+{% block content %}
+	<ul>
+	{% for corporation in corporation_list %}
+		<li><a href="#{{ corporation.slug }}">{{ corporation.name }}</a></li>
+	{% endfor %}
+	</ul>
+	{% for corporation in corporation_list %}
+	<h2 id="{{corporation.slug}}">{{ corporation.name }}</h2>
+		<h3>Effet premier</h3>
+		{{ corporation.on_first|markdown }}
+
+		<h3>Effet dernier</h3>
+		{{ corporation.on_last|markdown }}
+
+		<h3>Effet crash</h3>
+		{{ corporation.on_crash|markdown }}
+	{% endfor %}
+	<div class="spacer"></div>
+{% endblock %}

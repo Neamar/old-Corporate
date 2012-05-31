@@ -249,24 +249,6 @@
     }
   },
   {
-    "pk": 2,
-    "model": "corpos.asset",
-    "fields": {
-      "turn": 1,
-      "value": 12,
-      "corporation": 1
-    }
-  },
-  {
-    "pk": 3,
-    "model": "corpos.asset",
-    "fields": {
-      "turn": 2,
-      "value": 18,
-      "corporation": 1
-    }
-  },
-  {
     "pk": 4,
     "model": "corpos.asset",
     "fields": {
@@ -280,7 +262,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 11,
+      "value": 10,
       "corporation": 3
     }
   },
@@ -289,7 +271,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 8,
+      "value": 10,
       "corporation": 4
     }
   },
@@ -298,7 +280,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 17,
+      "value": 10,
       "corporation": 5
     }
   },
@@ -307,7 +289,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 4,
+      "value": 10,
       "corporation": 6
     }
   },
@@ -316,7 +298,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 5,
+      "value": 10,
       "corporation": 7
     }
   },
@@ -325,7 +307,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 11,
+      "value": 10,
       "corporation": 8
     }
   },
@@ -334,7 +316,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 3,
+      "value": 10,
       "corporation": 9
     }
   },
@@ -343,7 +325,7 @@
     "model": "corpos.asset",
     "fields": {
       "turn": 0,
-      "value": 9,
+      "value": 10,
       "corporation": 10
     }
   }

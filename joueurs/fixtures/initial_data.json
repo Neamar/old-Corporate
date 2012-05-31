@@ -3,8 +3,8 @@
     "pk": 1,
     "model": "joueurs.player",
     "fields": {
-      "description": "I'm the king.",
-      "creation_constraints": "",
+      "description": "(pending)",
+      "creation_constraints": "(pending)",
       "political_strength": 0,
       "influence": 1,
       "slug": "wizae",
@@ -13,7 +13,7 @@
       "citizen": null,
       "type": "player",
       "honor": 6,
-      "name": "Wiza\u00e9"
+      "name": "Marc Delange"
     }
   }
 ]

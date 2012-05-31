@@ -32,12 +32,12 @@ function drawChart() {
 {% endblock %}
 
 {% block content %}
+	<p>{{ corporation.get_origin_display|capfirst }} {{ corporation.get_political_position_display }}.</p>
+
 	{% load display_entities %}
 	{% display_entities corporation %}
 
 	<div id="chart_div" style="width: 530px; height: 300px;"></div>
-
-	<p>{{ corporation.get_origin_display|capfirst }} {{ corporation.get_political_position_display }}.</p>
 
 	{{ corporation.description|markdown }}
 

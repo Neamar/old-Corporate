@@ -1,6 +1,6 @@
 {% extends "template.html" %}
 {% block title %}Règles du corporate game{% endblock %}
-{% block h1 %}Liste des règles{% endblock %}
+{% block h1 %}Le Jeu{% endblock %}
 
 {% block content %}
 
@@ -11,11 +11,22 @@ qui rêvent tous de se hisser jusqu’au sommet de la chaine alimentaire Tokyoï
 Pour broyer ceux qui leur bloquent l’échelle, ils sont prêts à mentir, à tricher, et à déverser des torrents de nuyens dans des ombres qui ne demandent que cela : les fixers les plus en vue seront honorés de répondre à leurs besoins en vols, enlèvements, assassinats, manipulations des médias...
 D’autres connaissances telles que les yakuzas qui pullulent à Neo-Tokyo peuvent également règler leurs problèmes. Ceux qui prendront parti pour ou contre l’Empereur pourront tenter leur chance au sein des réseaux clandestins qui fleurissent dans tout conflit politique.</p>
 
+<h2>Univers</h2>
 <ul>
 {% for rule in rule_list %}
-	<li><small><tt>{{ rule.section }}</tt></small> <a href="/docs/{{ rule.slug}}">{{ rule.title }}</a></li>
+	{% if rule.section = "univers" %}
+		<li><a href="/docs/{{ rule.slug}}">{{ rule.title }}</a></li>
+	{% endif %}
 {% endfor %}
 </ul>
 
+<h2>Règles</h2>
+<ul>
+{% for rule in rule_list %}
+	{% if not rule.section = "univers" %}
+		<li><a href="/doc/{{ rule.slug }}">{{ rule.title }}</a></li>
+	{% endif %}
+{% endfor %}
+</ul>
 <p>Pressé par le temps ? En urgence, il suffit de lire <a href="/docs/regles">les règles</a> et les informations autour de <a href="/docs/mise-en-place">la mise en place du jeu</a>.</p>
 {% endblock %}

@@ -3,6 +3,7 @@
 <h3 id="{{ agency.slug }}">Parti {{ agency.political_side }}</h3>
 {{ agency.political_description|markdown }}
 
+<h4>{{ agency.name }}</h4>
 {% load display_entities %}
 {% display_entities agency %}
 

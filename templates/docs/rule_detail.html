@@ -1,10 +1,12 @@
 {% extends "template.html" %}
 {% load markup %}
+{% load toc %}
+{% load cf %}
 {% block title %}{{ rule.title }}{% endblock %}
 {% block h1 %}{{ rule.title }}{% endblock %}
 
 {% block content %}
-	{{ rule.content|markdown }}
+	{{ rule.content|markdown|toc:"<h2>Index</h2>"|cf|safe }}
 {% endblock %}
 
 {% block end %}

@@ -4,12 +4,10 @@
 
 {% block content %}
 
-<p>Les joueurs vont avoir le privilège d’incarner une brochette de cadre corporatistes aux dents longues,
-qui rêvent tous de se hisser jusqu’au sommet de la chaine alimentaire Tokyoïte.</p>
+<p>Les joueurs vont avoir le privilège d’incarner une brochette de cadres corporatistes aux dents longues, qui rêvent tous de se hisser jusqu’au sommet de la chaine alimentaire Tokyoïte.<br />
+Ces personnages font partie de l’élite, ils sont puissants, ambitieux et absolument dénués de scrupules. Pour broyer ceux qui leur bloquent l’échelle, ils sont prêts à mentir, à tricher, et à déverser des torrents de nuyens dans des ombres qui ne demandent que cela.</p>
 
-<p>Ces personnages font partie de l’élite, ils sont puissants, ambitieux et absolument dénués de scrupules.
-Pour broyer ceux qui leur bloquent l’échelle, ils sont prêts à mentir, à tricher, et à déverser des torrents de nuyens dans des ombres qui ne demandent que cela : les fixers les plus en vue seront honorés de répondre à leurs besoins en vols, enlèvements, assassinats, manipulations des médias...
-D’autres connaissances telles que les yakuzas qui pullulent à Neo-Tokyo peuvent également règler leurs problèmes. Ceux qui prendront parti pour ou contre l’Empereur pourront tenter leur chance au sein des réseaux clandestins qui fleurissent dans tout conflit politique.</p>
+<p>Le plus gros des documents de background est tiré du supplément Shadowrun « enclaves corporatistes ».</p>
 
 <h2>Univers</h2>
 <ul>
@@ -24,7 +22,7 @@ D’autres connaissances telles que les yakuzas qui pullulent à Neo-Tokyo peuve
 <ul>
 {% for rule in rule_list %}
 	{% if not rule.section = "univers" %}
-		<li><a href="/doc/{{ rule.slug }}">{{ rule.title }}</a></li>
+		<li><a href="/docs/{{ rule.slug }}">{{ rule.title }}</a></li>
 	{% endif %}
 {% endfor %}
 </ul>

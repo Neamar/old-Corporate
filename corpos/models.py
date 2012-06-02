@@ -40,6 +40,9 @@ class Corporation(AbleEntity):
 			self._current_asset = self.asset_set.order_by('-turn')[0].value
 		return self._current_asset
 
+	def image(self):
+		return "/static/corpos/" + str(self.id) + ".png"
+
 class Asset(models.Model):
 	turn = models.PositiveSmallIntegerField()
 	corporation = models.ForeignKey(Corporation)

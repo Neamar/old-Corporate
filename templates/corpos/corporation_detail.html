@@ -32,6 +32,7 @@ function drawChart() {
 {% endblock %}
 
 {% block content %}
+	<img src="{{ corporation.image }}" alt="{{ corpo.name }}" class="entity" />
 	<p>{{ corporation.get_origin_display|capfirst }} {{ corporation.get_political_position_display }}.</p>
 
 	{% load display_entities %}

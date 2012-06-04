@@ -2,9 +2,13 @@
 {% load entity_link %}
 
 <h2 id="{{ player.slug }}">{{ player.name }}</h2>
+<img src="{{ player.image }}" alt="{{ player.name }}" class="entity" />
+
+{% display_entities player %}
+
 <ul>
 	<li><strong>Citoyenneté corpo</strong> : {% entity_link player.citizen %}
-	<li><strong>Contraintes</strong> : {{ player.creation_constraints }}
+	<li><strong>Traits</strong> : {{ player.creation_constraints }}
 </ul>
 {{ player.description|markdown }}
 

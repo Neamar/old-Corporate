@@ -20,6 +20,9 @@ class Player(Entity):
 	creation_constraints = models.TextField()
 	money = models.PositiveIntegerField(default=2000000)
 
+	def image(self):
+		return "/static/joueurs/" + str(self.id) + ".png"
+
 class Share(models.Model):
 	player = models.ForeignKey(Player)
 	corporation = models.ForeignKey(Corporation)

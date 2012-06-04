@@ -6,20 +6,27 @@
 
 {% block content %}
 	<ul>
-	{% for corporation in corporation_list %}
-		<li><a href="#{{ corporation.slug }}">{{ corporation.name }}</a></li>
-	{% endfor %}
+		<li><a href="#premiers">Effets premiers</a></li>
+		<li><a href="#derniers">Effets derniers</a></li>
+		<li><a href="#crashs">Effets crashs</a></li>
 	</ul>
+	<h2 id="premiers">Effets premiers</h2>
 	{% for corporation in corporation_list %}
-	<h2 id="{{corporation.slug}}">{{ corporation.name }}</h2>
-		<h3>Effet premier</h3>
+	<h3>{{ corporation.name }}</h3>
 		{{ corporation.on_first|markdown }}
+	{% endfor %}
 
-		<h3>Effet dernier</h3>
+	<h2 id="derniers">Effets derniers</h2>
+	{% for corporation in corporation_list %}
+	<h3>{{ corporation.name }}</h3>
 		{{ corporation.on_last|markdown }}
+	{% endfor %}
 
-		<h3>Effet crash</h3>
+	<h2 id="crashs">Effets crashs</h2>
+	{% for corporation in corporation_list %}
+	<h3>{{ corporation.name }}</h3>
 		{{ corporation.on_crash|markdown }}
 	{% endfor %}
+
 	<div class="spacer"></div>
 {% endblock %}

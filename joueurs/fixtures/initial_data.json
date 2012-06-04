@@ -1,19 +1,173 @@
 [
   {
-    "pk": 1,
-    "model": "joueurs.player",
+    "pk": 1, 
+    "model": "joueurs.player", 
     "fields": {
-      "description": "(pending)",
-      "creation_constraints": "(pending)",
-      "political_strength": 0,
-      "influence": 1,
-      "slug": "wizae",
-      "pc": "R\u00e9mi",
-      "political_position": "nc",
-      "citizen": null,
-      "type": "player",
-      "honor": 6,
-      "name": "Marc Delange"
+      "money": 1600, 
+      "description": "Enr\u00f4l\u00e9 dans les marines imp\u00e9riaux \u00e0 l'age de 21 ans, il a connu les champs de bataille de Cor\u00e9e, de Chine, la moiteur \u00e9touffante des Philippines et les miradors du camp m\u00e9tahumain de l'\u00eele de Yomi, sortant de chaque charnier avec un grade toujours plus \u00e9lev\u00e9 et des subordonn\u00e9s toujours plus d\u00e9vou\u00e9s. Il quitta l'arm\u00e9e la t\u00eate haute le jour ou un \u00e9tat major ingrat et corrompu l'obligea \u00e0 choisir entre d\u00e9missionner ou bien souiller son honneur en traitant d'\u00e9gal \u00e0 \u00e9gal l'engeance m\u00e9tahumaine. Les meilleurs \u00e9l\u00e9ments de son r\u00e9giment menac\u00e8rent de se faire seppuku sur le champ si l'arm\u00e9e de mettait pas \u00e9galement fin \u00e0 leur contrat ; et pass\u00e8rent avec lui dans le giron de Mitsuhama, corpo extr\u00eamement proche de l'arm\u00e9e japonaise avec laquelle Maeda avait tiss\u00e9 d\u2019excellents contacts au long de sa carri\u00e8re. Le g\u00e9n\u00e9ral a d\u00e9menti publiquement les rumeurs de corruption, qui l'accusaient d'avoir travaill\u00e9 en sous-main pour la corpo depuis des ann\u00e9es -- de toute fa\u00e7on, les rares t\u00e9moins se sont toujours r\u00e9tract\u00e9s.\r\n\r\nDevenu g\u00e9n\u00e9ral de salon, charg\u00e9 d'analyses strat\u00e9giques pour le compte de Mitsuhama, il a rassembl\u00e9 ses hommes et son copieux tr\u00e9sor de guerre \u00e0 Neo-Toyko. Il compte en faire bon usage, et s'arracher une place \u00e0 la hauteur de ses sacrifices qui lui permettra de continuer sa lutte pour la grandeur de l'Empire Japonais.", 
+      "creation_constraints": "V\u00e9t\u00e9ran galonn\u00e9", 
+      "political_strength": 0, 
+      "citizen": 3, 
+      "influence": 1, 
+      "honor": 6, 
+      "pc": "R\u00e9mi", 
+      "political_position": "nc", 
+      "rem": "", 
+      "type": "player", 
+      "slug": "wizae", 
+      "name": "Akihiro Maeda"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 1850, 
+      "description": "On dit \u00e0 son \u00e9gard qu'elle entend parfois les chuchottements des Kamis, et que ces informations valent de l'or.\r\nCette Elfe taciturne est mont\u00e9e en fl\u00e8che au sein d'EVO jusqu'\u00e0 une position o\u00f9 la moyenne d'\u00e2ge est bien sup\u00e9rieure \u00e0 ses 27 ans. Mais attention, il ne reste plus grand chose de ceux qui n'ont pas eu peur de ce visage enfantin.", 
+      "creation_constraints": "M\u00e9tahumaine, femme, \u00c9veill\u00e9e", 
+      "political_strength": 0, 
+      "citizen": 4, 
+      "influence": 1, 
+      "honor": 6, 
+      "pc": "Jules", 
+      "political_position": "nc", 
+      "rem": "Traits priv\u00e9s : Gaijin, CROC [qui est son \u00e9quipe de runners \"Rising Star\" : +20% en protection.]\r\n\r\nRP a r\u00e9veller si run a scandale r\u00e9ussie : en r\u00e9alit\u00e9 c'est une runneuse du nom de Djamena qui a r\u00e9alis\u00e9 une longue op\u00e9ration d'infiltration dans Evo. La m\u00e9gacorporation clame qu'elle est responsable de la disparition d'Osawa Shinise, un des plus \u00e9minents dirigeants d'une des filiales \u00e0 Neo-Tokyo.", 
+      "type": "player", 
+      "slug": "fusae-eclipse-naoe", 
+      "name": "Fusae \"Eclipse\" Naoe"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 1550, 
+      "description": "Grimper les \u00e9chelons du Kodachi-gumi demande de se salir les mains, mais cela n'a jamais d\u00e9rang\u00e9 Tetsuo : son instinct de survie et sa discipline ont toujours \u00e9t\u00e9 plus forts que sa conscience.\r\n\r\nPour r\u00e9compenser son ob\u00e9issance, les Oyabuns ont enfin d\u00e9cid\u00e9 de lui offrir le statut de kobun qu'il a tant convoit\u00e9. Il compte s'en montrer digne, \u00e0 la fois aux yeux de son clan -- qu'il v\u00e9n\u00e8re plus que tout -- et aux yeux de son mentor secret, celui qui l'aide de ses messages \u00e9nigmatiques depuis qu'il a sauv\u00e9 la vie d'un pr\u00e8tre shinto\u00efste au regard \u00e9trange...", 
+      "creation_constraints": "Yakuza, Pupille du Dragon", 
+      "political_strength": 0, 
+      "citizen": null, 
+      "influence": 1, 
+      "honor": 6, 
+      "pc": "Paul", 
+      "political_position": "nc", 
+      "rem": "", 
+      "type": "player", 
+      "slug": "tetsuo-anzai", 
+      "name": "Tetsuo Anzai"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 2000, 
+      "description": "Apr\u00e8s avoir grimp\u00e9 chacun des \u00e9chelons de la hi\u00e9rarchie de Shiawase, Aoki demande le poste de directeur de la prison g\u00e9n\u00e9rale.\r\nCe but atteint il use de sa position pour se faire des contacts bien plac\u00e9s et d\u00e9tourner **quelque** nuyens.\r\nIl se fait rapidement rep\u00e9rer, mais ayant d\u00e9j\u00e0 trop d\u2019influence il r\u00e9ussit \u00e0 sortir de Shiawase en \u00e9touffant le scandale, deux millions en poche.", 
+      "creation_constraints": "Aucune", 
+      "political_strength": 0, 
+      "citizen": null, 
+      "influence": 1, 
+      "honor": 6, 
+      "pc": "Mich", 
+      "political_position": "nc", 
+      "rem": "", 
+      "type": "player", 
+      "slug": "fujino-aoki", 
+      "name": "Fujino Aoki"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 1600, 
+      "description": "Tanoke Hidashima est un elfe androgyne au pass\u00e9 un peu sombre.\r\nIssu d\u2019un milieu tr\u00e8s pauvre, il a r\u00e9ussi malgr\u00e9 sa condition de m\u00e9ta humain, \u00e0 se faire une place dans N\u00e9o Tokyo. Il s\u2019est fait une r\u00e9putation et des contacts, notamment dans la classe politique du parti r\u00e9formateur. Sa condition de m\u00e9tahumain l\u2019emp\u00eache de prendre des places dirigeantes dans le syst\u00e8me mais son influence est maintenant consid\u00e9rable.\r\n\r\nPar le jeu de ses appuis, il a r\u00e9cemment r\u00e9ussi \u00e0 augmenter consid\u00e9rablement sa petite fortune qu\u2019il d\u00e9cide maintenant d\u2019investir.", 
+      "creation_constraints": "M\u00e9tahumain, Politicien", 
+      "political_strength": 6, 
+      "citizen": null, 
+      "influence": 1, 
+      "honor": 6, 
+      "pc": "HK", 
+      "political_position": "reformateur", 
+      "rem": "", 
+      "type": "player", 
+      "slug": "tanoke-hidashima", 
+      "name": "Tanoke Hidashima"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 1600, 
+      "description": "Tyroshi est un homme d'affaire discret. Ayant mis au point le r\u00e9seau de communication par satellites le plus important du monde, il poss\u00e9derait une fortune personnelle assez cons\u00e9quente, m\u00eame si son train de vie s\u2019av\u00e8re en d\u00e9finitive banal.\r\n\r\nSon regard dur derri\u00e8re ces lunettes en refroidissent plus d'un, et on le dis impitoyable dans son travail.", 
+      "creation_constraints": "Mr Japon, Ancien des ombres", 
+      "political_strength": 0, 
+      "citizen": null, 
+      "influence": 1, 
+      "honor": 7, 
+      "pc": "Cl\u00e9m", 
+      "political_position": "nc", 
+      "rem": "", 
+      "type": "player", 
+      "slug": "tyroshi-shaka", 
+      "name": "Tyroshi Shaka"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 800, 
+      "description": "Lio Shiawase, troisi\u00e8me du nom.\r\nN\u00e9 dans la grande famille il est venu l'heure de faire ces preuves pour ce jeune homme au physique d\u00e9j\u00e0 bien avanc\u00e9. Pris \u00e0 son adolescence par une maladie rare qui l'a fait vieillir physiquement il arrive dans les affaire avec un coeur jeune et inconnu mais des rides d\u00e9j\u00e0 pr\u00e9sentes sur son visage calme. Ainsi malgr\u00e9 son sourire les gens ont souvent du mal \u00e0 le prendre au s\u00e9rieux et quelques uns de ses ordres se perdent encore dans les tr\u00e9fonds des domaines bureaucratique.\r\n\r\nAinsi malgr\u00e9 son refus que sa famille s'occupe de ses soins (l'honneur n'est pas un simple mot) il se doit de se battre pour retrouver le corps de son \u00e2ge et en profitera pour laisser sa marque, celle d'un homme qui affronte les \u00e9l\u00e9ments depuis son plus jeune \u00e2ge pour tout ce qui reste important \u00e0 ses yeux : l'honneur.\r\n\r\nAinsi grandissant et vieillissant au milieu de La famille, il conna\u00eet d\u00e9j\u00e0 tout des salles, de l'argent, du silence respectueux et de la mort qui guette au fond du fleuve Sumida.\r\nIl n'en reste pas moins un guerrier de son temps, l'esprit vif d'un r\u00e9formateur muni de l'honneur qui fonda son clan.", 
+      "creation_constraints": "H\u00e9ritier, Pupille du Dragon", 
+      "political_strength": 0, 
+      "citizen": 1, 
+      "influence": 1, 
+      "honor": 6, 
+      "pc": "Ugo", 
+      "political_position": "nc", 
+      "rem": "Lourd secret : jeune loup (pas de Votes)", 
+      "type": "player", 
+      "slug": "lio-shiawase", 
+      "name": "Lio Shiawase"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 1450, 
+      "description": "Savoir pourquoi un m\u00e9decin se lance dans le monde impitoyable des affaires, voil\u00e0 une longue histoire. \r\n\r\nDisons pour faire court qu'il ne peut plus exercer depuis qu'il s'est fait casser les doigts par une \u00e9quipe de yakuzas bien d\u00e9termin\u00e9e \u00e0 lui faire enterrer un rapport de recherche d\u00e9montrant les effets n\u00e9fastes du jeu du dragon sur les jeunes de 15 \u00e0 23 ans.\r\nIl a donc d\u00e9cid\u00e9 de se lancer dans la politique pour les enterrer (ce qui ne l\u2019emp\u00eachera pas de travailler avec eux, hein !) et dans les affaires car la politique sans argent, c'est un un peu comme un eunuque sans corde vocale.", 
+      "creation_constraints": "Politicien, \u00c9veill\u00e9", 
+      "political_strength": 4, 
+      "citizen": null, 
+      "influence": 1, 
+      "honor": 6, 
+      "pc": "Tony", 
+      "political_position": "nc", 
+      "rem": "", 
+      "type": "player", 
+      "slug": "dr-jensen", 
+      "name": "Dr Jensen"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "joueurs.player", 
+    "fields": {
+      "money": 1450, 
+      "description": "\u00c0 24 ans cette jeune femme fait succession \u00e0 feu son fr\u00e8re, disparu 6 mois plus t\u00f4t dans un accident de ski lors de ses vacances \u00e0 Gen\u00e8ve.\r\n\r\nAlors qu'il g\u00e9rait les affaires de Mitsuhama, Yumi quant \u00e0 elle occupait les devants de la sc\u00e8ne m\u00e9diatique. Montrant son joli minois par-ci par l\u00e0, d'une ouverture de boutique \u00e0 une br\u00e8ve apparition lors de shows caritatifs ; son dur labeur lui permettait de toucher son \"argent de poche\" c\u00e9d\u00e9 avec r\u00e9ticence par son Aniki. Comprenant rapidement qu'apr\u00e8s le d\u00e9c\u00e8s de son fr\u00e8re, elle n'aurait plus \u00e0 se contenter de sommes modiques, l'envie de verser une larme ne se fit pas sentir, except\u00e9 lors de l'achat de sa nouvelle - et troisi\u00e8me - Lamborghini.\r\n\r\nLa japonaise est v\u00e9nale, me direz-vous, en effet celle-ci s'est prise d'affection pour le seul homme qui la comble vraiment : l'argent ; rajoutez \u00e0 cela que c'est un \u00eatre futile, imbu de lui-m\u00eame et capricieux.", 
+      "creation_constraints": "Femme, H\u00e9riti\u00e8re de Mitsuhama", 
+      "political_strength": 0, 
+      "citizen": 3, 
+      "influence": 1, 
+      "honor": 5, 
+      "pc": "Isa", 
+      "political_position": "nc", 
+      "rem": "Dans ses jeunes ann\u00e9es, Yumi rencontra un homme pour lequel elle tomba amoureuse, si tant est qu'elle puisse aimer une autre personne qu'elle. Ce Ry\u00fbji, puisque c'est son nom, Yakuza de bas \u00e9tage lors de leur rencontre eut la chance et l'honneur de capter son regard, r\u00e9veillant en elle la \"bad girl\" qui sommeillait. Aujourd'hui, mont\u00e9 en grade, Ry\u00fbji \u00e9voque pour elle la virilit\u00e9 \u00e0 l'\u00e9tat brut, ce qu'elle aime le plus sont ses mani\u00e8res vulgaires lorsqu'il la culbute debout contre un mur.", 
+      "type": "player", 
+      "slug": "yumi-mitsuhama", 
+      "name": "Yumi Mitsuhama"
     }
   }
 ]

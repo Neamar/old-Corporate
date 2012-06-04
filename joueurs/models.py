@@ -12,12 +12,13 @@ PLAYER_POLITICAL_POSITIONS = (
 
 class Player(Entity):
 	pc = models.CharField(max_length="15")
-	honor = models.PositiveSmallIntegerField()
+	honor = models.PositiveSmallIntegerField(default=6)
 	influence = models.PositiveSmallIntegerField(default=1)
 	political_strength = models.PositiveSmallIntegerField(default=0)
 	political_position =  models.CharField(max_length=16, choices=PLAYER_POLITICAL_POSITIONS, default='nc')
 	citizen = models.ForeignKey(Corporation, null=True, blank=True)
 	creation_constraints = models.TextField()
+	money = models.PositiveIntegerField(default=2000000)
 
 class Share(models.Model):
 	player = models.ForeignKey(Player)

@@ -9,6 +9,7 @@ class Entity(models.Model):
 	slug = models.SlugField(editable=False)
 	type = models.SlugField(editable=False)
 	description = models.TextField()
+	rem = models.TextField(null=True, blank=True)
 
 	def save(self, *args, **kwargs):
 	# Auto fill slug and type

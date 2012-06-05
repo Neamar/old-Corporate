@@ -2,6 +2,7 @@
 
 from django.db import models
 from corporate.models import AbleEntity
+from django.db.models import Count
 
 CORPORATION_POLITICAL_POSITIONS = (
 	('nc', 'non aligné'),
@@ -42,6 +43,9 @@ class Corporation(AbleEntity):
 
 	def image(self):
 		return "/static/corpos/" + str(self.id) + ".png"
+
+	def shares(self):
+		return self.share_set.values('player__name').annotate(Count('corporation')).order_by('-corporation__count')
 
 class Asset(models.Model):
 	turn = models.PositiveSmallIntegerField()

@@ -42,6 +42,24 @@ function drawChart() {
 
 	{{ corporation.description|markdown }}
 
+	<h3>Parts possédées</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Corporation</th>
+				<th>Parts</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for share in corporation.shares %}
+				<tr>
+					<td>{{ share.player__name }}</td>
+					<td>{{ share.corporation__count }}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
 	<h2>Effet premier</h2>
 	{{ corporation.on_first|markdown }}
 

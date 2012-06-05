@@ -17,6 +17,7 @@ urlpatterns = patterns('',
 	url(r'^corpos/', include('corpos.urls')),
 	url(r'^joueurs/', include('joueurs.urls')),
 	url(r'^recap', 'corporate.views.recap'),
+	url(r'^classement', 'corporate.views.classement'),
 	url(r'^admin/', include(admin.site.urls),),
 	url(r'^', include('docs.urls')),
 )

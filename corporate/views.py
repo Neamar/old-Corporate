@@ -4,6 +4,16 @@ from corpos.models import Corporation
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
+import operator
+
+def get_score(c):
+	return c.current_asset()
+
+def classement(request):
+	corporation_list = list(Corporation.objects.all())
+	corporation_list.sort(key=get_score, reverse=True)
+	return render_to_response('classement.html', {'corporation_list': corporation_list})
+
 def recap(request):
 	fixer_list = Fixer.objects.all()
 	yakuza_list = Yakuza.objects.all()

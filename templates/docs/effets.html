@@ -12,19 +12,19 @@
 	</ul>
 	<h2 id="premiers">Effets premiers</h2>
 	{% for corporation in corporation_list %}
-	<h3>{{ corporation.name }}</h3>
+	<h5>{{ corporation.name }}</h5>
 		{{ corporation.on_first|markdown }}
 	{% endfor %}
 
 	<h2 id="derniers">Effets derniers</h2>
 	{% for corporation in corporation_list %}
-	<h3>{{ corporation.name }}</h3>
+	<h5>{{ corporation.name }}</h5>
 		{{ corporation.on_last|markdown }}
 	{% endfor %}
 
 	<h2 id="crashs">Effets crashs</h2>
 	{% for corporation in corporation_list %}
-	<h3>{{ corporation.name }}</h3>
+	<h5>{{ corporation.name }}</h5>
 		{{ corporation.on_crash|markdown }}
 	{% endfor %}
 

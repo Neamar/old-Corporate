@@ -6,6 +6,7 @@ urlpatterns = patterns('',
 	url(r'^$',
 		ListView.as_view(
 			queryset=Corporation.objects.all())),
+	url(r'^bourse$', 'corpos.views.bourse'),
 	url(r'^(?P<slug>[a-z-]+)$',
 		DetailView.as_view(
 			model=Corporation)),

@@ -1,0 +1,44 @@
+{% extends "large_template.html" %}
+{% load markup %}
+
+{% block title %}Bourse{% endblock %}
+{% block h1 %}{{ corporation.name }}{% endblock %}
+
+{% block head %}
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+	var data = google.visualization.arrayToDataTable([
+    ['Tour',
+		{% for c in corporation_list %}
+			'{{c.name}}',
+		{% endfor %}
+	],
+	{% for turn in assets %}
+    ['0',
+		{% for a in turn %}
+			{{a.value}},
+		{% endfor %}
+	],
+	{% endfor %}
+	]);
+
+	var options = {
+		title: 'Bourse',
+		backgroundColor: 'transparent',
+		theme: 'maximized',
+		pointSize: 4,
+	};
+
+	var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+	chart.draw(data, options);
+  }
+</script>
+{% endblock %}
+
+{% block content %}
+	<div id="chart_div" style="width: 95%; height: 90%; min-height:600px; margin:auto"></div>
+
+{% endblock %}

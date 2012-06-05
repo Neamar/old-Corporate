@@ -3,6 +3,7 @@
 from django.db import models
 from corporate.models import Entity
 from corpos.models import Corporation
+from django.db.models import Count
 
 PLAYER_POLITICAL_POSITIONS = (
 	('nc', 'non aligné'),
@@ -23,6 +24,8 @@ class Player(Entity):
 	def image(self):
 		return "/static/joueurs/" + str(self.id) + ".png"
 
+	def shares(self):
+		return Share.objects.values('corporation__name').annotate(Count('corporation')).order_by('-corporation__count')
 class Share(models.Model):
 	player = models.ForeignKey(Player)
 	corporation = models.ForeignKey(Corporation)

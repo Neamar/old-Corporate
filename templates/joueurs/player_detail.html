@@ -13,19 +13,19 @@
 {{ player.description|markdown }}
 
 
-<h3>Actions possédées</h3>
+<h3>Parts possédées</h3>
 <table>
 	<thead>
 		<tr>
 			<th>Corporation</th>
-			<th>Actions</th>
+			<th>Parts</th>
 		</tr>
 	</thead>
 	<tbody>
-		{% for share in shares %}
+		{% for share in player.shares %}
 			<tr>
 				<td>{{ share.corporation__name }}</td>
-				<td>{{ share.corporation__count }}%</td>
+				<td>{{ share.corporation__count }}</td>
 			</tr>
 		{% endfor %}
 	</tbody>

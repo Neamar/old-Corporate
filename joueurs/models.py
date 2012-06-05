@@ -25,7 +25,7 @@ class Player(Entity):
 		return "/static/joueurs/" + str(self.id) + ".png"
 
 	def shares(self):
-		return Share.objects.values('corporation__name').annotate(Count('corporation')).order_by('-corporation__count')
+		return self.share_set.values('corporation__name').annotate(Count('corporation')).order_by('-corporation__count')
 class Share(models.Model):
 	player = models.ForeignKey(Player)
 	corporation = models.ForeignKey(Corporation)

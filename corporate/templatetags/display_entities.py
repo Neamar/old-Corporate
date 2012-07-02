@@ -50,6 +50,7 @@ def display_entities(entities):
 			('capacity_sabotage', 'Sab.'),
 			('capacity_scandal', 'Scan.'),
 		)
+		#items = sorted(items, key=lambda corpo: corpo.classement, reverse=True)
 
 	if isinstance(item_sample, (Player)):
 		attributes = (

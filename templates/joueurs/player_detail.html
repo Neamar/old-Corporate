@@ -8,8 +8,11 @@
 
 <ul>
 	<li><strong>Citoyenneté corpo</strong> : {% entity_link player.citizen %}
-	<li><strong>Traits</strong> : {{ player.creation_constraints }}
 </ul>
+
+<p>Traits :</p>
+{{ player.creation_constraints|markdown }}
+
 {{ player.description|markdown }}
 
 

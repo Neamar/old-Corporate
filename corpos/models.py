@@ -22,6 +22,8 @@ CORPORATION_ORIGINS = (
 )
 
 class Corporation(AbleEntity):
+	class Meta:
+		ordering = ['classement']
 	political_position = models.CharField(max_length=16, choices=CORPORATION_POLITICAL_POSITIONS)
 	origin = models.CharField(max_length="12", choices=CORPORATION_ORIGINS)
 	rank = models.CharField(max_length="3", choices=CORPORATION_RANKS)
@@ -31,6 +33,7 @@ class Corporation(AbleEntity):
 	on_last_effect = models.TextField()
 	on_crash = models.TextField()
 	on_crash_effect = models.TextField()
+	classement = models.IntegerField()
 
 	def get_capacity_display(self):
 		return "i%s / d%s / s%s / t%s" % (self.capacity_information, self.capacity_datasteal, self.capacity_sabotage, self.capacity_scandal)

@@ -3,6 +3,7 @@ from django.views.generic import DetailView, ListView
 from joueurs.models import Player
 
 urlpatterns = patterns('',
+	url(r'^shares$', 'joueurs.views.shares'),
 	url(r'^$',
 		ListView.as_view(
 			queryset=Player.objects.all())),

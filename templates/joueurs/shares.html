@@ -1,0 +1,33 @@
+{% extends "large_template.html" %}
+{% load markup %}
+
+{% block title %}Actions{% endblock %}
+{% block h1 %}{{ corporation.name }}{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+<table>
+<thead>
+<tr>
+	<th></th>
+	{% for corporation in corporations %}
+	<th title="{{ corporation.name }}"> {{ corporation.slug }} </th>
+	{% endfor %}
+</tr>
+</thead>
+<tbody>
+	{% for player in players %}
+	<tr>
+	<td> {{ player.name }} </td>
+	{% for share in player.all_shares %}
+	<td> {{ share }} </td>
+	{% endfor %}
+	</tr>
+	{% endfor %}
+</tbody>
+</table>
+
+{% endblock %}

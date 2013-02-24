@@ -1,4 +1,5 @@
 *.pyc
 *.pyo
 db.sqlite
+dump.json
 static/*

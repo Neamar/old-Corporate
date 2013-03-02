@@ -154,6 +154,12 @@ td a
    font-family:Audiowide, cursive;
 }
 
+#end a
+{
+   color:white;
+   text-shadow:0px 3px 3px blue;
+}
+
 #content
 {
    clear:both;

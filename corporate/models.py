@@ -6,7 +6,7 @@ class Entity(models.Model):
 		abstract = True
 
 	name = models.CharField(max_length="100")
-	slug = models.SlugField(editable=False)
+	slug = models.SlugField()
 	type = models.SlugField(editable=False)
 	description = models.TextField()
 	rem = models.TextField(null=True, blank=True)

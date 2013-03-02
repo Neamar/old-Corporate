@@ -14,6 +14,7 @@
 
 <h2>Joueurs</h2>
 {% display_entities player_list %}
+<p><a href="{% url joueurs.views.shares %}">Accès au tableau récapitulatif</a></p>
 
 <h2>Agents</h2>
 <h3>Fixers</h3>
@@ -28,7 +29,7 @@
 <h2>Corporations</h2>
 <h3>Corporations</h3>
 {% display_entities corporation_list %}
-
+<p><a href="/corpos/bourse">Accès à l'historique de la bourse</a>.</p>
 <!--
 <h3>Effets</h3>
 <table class="list_table">

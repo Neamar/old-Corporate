@@ -14,7 +14,13 @@
 <tr>
 	<th></th>
 	{% for corporation in corporations %}
-	<th title="{{ corporation.name }}"> {{ corporation.slug }} </th>
+	<th title="{{ corporation.name }}">
+	{% if corporation.slug == "nct" %}
+		NC&amp;T
+	{%else%}
+		{{ corporation.slug }}
+	{%endif%}
+	</th>
 	{% endfor %}
 </tr>
 </thead>

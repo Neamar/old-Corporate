@@ -1,6 +1,6 @@
 Corporate Game Manhattan.
-Étude de cas.
 
+## Étude de cas.
 Réduire les concepts au maximum...
 
 ### Ordres disponibles
@@ -61,7 +61,7 @@ Réduire les concepts au maximum...
     - 50 * actifs * nbparts * (1.25 si corpo première) * (0.75 si corpo dernière) * (1.1 si citoyenneté corpo)
 * Achat d'influence corporatiste
 
-## Feedbacks
+### Feedbacks
 * Global
     - Classement final des corpos, avec Δ
     - Sabotages
@@ -73,3 +73,34 @@ Réduire les concepts au maximum...
     - Feedback des runs sur la corpo dont on est citoyen : interception, capture
     - Feedback des runs de protection : interception, capture
     - Datasteal sur la corpo dont on est citoyen
+
+## Architecture
+### Website
+Holds global datas
+
+* User
+    - mail
+    - phone
+    - image
+
+### Engine
+Holds datas for a game
+
+* Game
+    - current_turn
+    - total_turn
+* Player
+    - -> User
+    - -> Game
+    - Name
+* Message
+    - title
+    - content
+    - author
+    - public?
+* MessageRecipient
+    - ->Player
+* Order
+    - -> Player
+    - -> Game
+    - turn 

@@ -1,0 +1,13 @@
+# Les bases d'un empire
+
+Il y a deux millénaires, le proverbe disait que "tous les chemins mènent à Rome". Non seulement c’était largement vrai, mais le long de ces chemins, l’économie, la culture, la science et la force militaire des Romains avait la possibilité de s’étendre à travers le monde connu. Aujourd’hui, tous les chemins mènent à Neo-Tokyo. Presque toutes les nations de la Terre utilisent le nuyen comme devise d’échange, ce qui facilite le transport des biens d’origine japonaise d’un bout de la planète à l’autre. La culture japonaise se diffuse partout, des salles de conférences inspirées par le style zen à l’argot de rue des Barrens. Il n’est pas étonnant que les ventes de linguasofts japonais dépassent celles de tous les autres. Les percées dans les domaines de la cybertechnologie, de la biotechnologie, de la nanotechnologie et de l’informatique proviennent souvent des labos de Neo-Tokyo. Les soldats du Japon impérial sont en garnison dans des bases dissiminées sur toute la planète, et les satellites espions japonais lui tournent autour. Le Japon domine la scène du Sixième Monde, et Neo-Tokyo siège en son centre.
+
+## La Loi Yamato
+
+Dans le chaos de la SIVTA et de l’Éveil, le reste du monde remarqua à peine le vote de la loi Yamato en 2012 par la Diète japonaise, alors qu’elle deviendrait le pivot de l’impérialisme affirmé de la nation.
+
+D’un côté, la loi Yamato a fait disparaître presque toutes les régulations gouvernementales sur les corporations japonaises, permettant aux mégacorporations naissantes d’avaler les entreprises plus petites et de devenir des monopoles légaux. D’un autre côté elle encourageait les mesures protectionnistes en faveur des corpos japonaises, entravant la concurrence étrangère. Elle a aussi fait du nuyen la devise officielle du Japon et investi un conseil multilatéral corpo-gouvernemental du pouvoir de définir sa politique monétaire.
+
+En outre, la loi Yamato a donné au gouvernement japonais le pouvoir d’interférer avec les gouvernements étrangers afin "d’assurer sa propre sécurité". Un effort de construction national soutenu par le Japon et dont les fers de lance furent les mégacorporations japonaises et les marines impériaux qui se développèrent alors dans toute la ceinture du Pacifique.
+
+Enfin, elle a accordé au gouvernement japonais des pouvoirs plus larges afin de surveiller les bébés métahumains nouvellement apparus, et pour édicter des lois qui leur seraient spécifiques. Ces lois mèneraient plus tard à des réactions draconiennes envers la métahumanité.

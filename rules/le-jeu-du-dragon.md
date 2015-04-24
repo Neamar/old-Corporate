@@ -1,0 +1,28 @@
+# Le Jeu du Dragon
+
+Neo-Tokyo a l’honneur et le privilège d’être la demeure (qui a dit le terrain de jeu ?) du Grand Dragon Ryumyo. Premier de son espèce à avoir été aperçu par les humains du 6<sup>ème</sup> monde, il a trouvé sa place dans la société japonaise en tant que Kami, rejoignant le large panthéon shintoïste que vénère la majorité de la population. Comme tous ceux de sa race, Ryumyo est connu pour être extrêmement puissant, retors et calculateur, et pour avoir des plans et des objectifs si complexes qu’il dépassent l’entendement des mortels. Ses machinations laissent cependant des traces à tous les niveaux de la société -- principalement chez les yaks -- et ceux qui sont assez fous ou téméraires peuvent tenter de les décrypter pour les tourner à leur avantage. Le Jeu du Dragon est subtil et dangereux, et nombreux sont les imprudents qui se sont laissé happer par ses engrenages. Toutefois, la fortune attend ceux qui sauront comprendre comment en tirer profit.
+
+À chaque tour, chaque joueur à le droit de déclarer qu'il participe au Jeu du Dragon. Il transmet au MJ son estimation du nombre total de joueurs y participant ce tour-ci. Si son estimation est juste, 1D10 est tiré pour lui sur la table suivante, 1D20 si elle est fausse :
+
+1. Vous avez un aperçu de ce que Ryumyo compte faire de Neo-Tokyo. Malgré le vertige qui vous secoue les tripes, cette information vous donne une longueur d’avance sur le marché. Vous gagnez un Vote supplémentaire au prochain tour.
+2. Ryumyo a apprécié le service que vous lui avez rendu. En guise de remerciement, vous êtes invité dans un temple shintoïste pour y recevoir la bénédiction des Kamis. Un privilège qui fait des jaloux et vous rapporte 1 d’Honneur.
+3. Le dragon semble avoir décidé que vous aurez un rôle à jouer, mais pas tout de suite. Pour éviter qu’il ne vous arrive malheur, ses sbires vous font profiter d’une Défense de 60% contre toutes les runs qui durera jusqu’à la fin du prochain tour.
+4. L’*oyabun* vous remercie pour votre aide dans cette délicate affaire de meurtre rituel. Gagnez une Loyauté de 2 pour un clan Yakuza tiré au hasard parmi ceux que vous n’avez pas pour allié ou ennemi.
+5. Le nom de Ryumyo ouvre des portes jusque dans la Diète. Gagnez un point politique dans votre parti -- si vous n’en avez pas, celui de votre corpo si elle est alignée. Sinon : un parti au hasard.
+6. L’homme masqué s’incline, et murmure qu’il accepte de vous aider. Au prochain tour, vous pourrez ajouter gratuitement 50% de chance de réussite à une run.
+7. Il y a plus d’un dragon plaçant ses pions à Neo-Tokyo. Amusé par votre audace, Lofwyr décide de vous donner un coup de pouce. Tous vos votes du tour ajoutent +2 au lieu de +1 et enlèvent -2 au lieu de -1, les -1 contre NC&T étant annulés.
+8. La revente de cet étrange artefact vous rapporte 1D6 x 50 000.
+9. Vous n’êtes pas le seul à garder un oeil sur vos concurrents, vous apprend un vieux prêtre au sourire malicieux. Recevez la fiche d’ordre de ce tour de deux autres joueurs tirés au hasard.
+10. Vous commencez à avoir une vue d’ensemble du Jeu du Dragon. Pas d’effet ce tour ci, mais vous pourrez faire une estimation supplémentaire sur le nombre de joueurs si vous jouez au prochain tour.
+11. Le message est bref est sans équivoque : "Vos petites manoeuvres me fatiguent. Changez d’attitude ou je vais devoir vous y forcer." La prochaine fois que vous jouerez au Jeu du Dragon, vous ne pourrez pas faire d’estimation sur le nombre de joueurs.
+12. Ryumyo décide de vous tester. Deux joueurs au hasard reçoivent votre fiche d’ordre de ce tour.
+13. Vous n’auriez jamais dû entrer dans ce sanctuaire. Vous débarasser de la malédiction vous coûte 1D6 x 50 000. Si vous ne pouvez pas payer, perdez un point d’Influence corporatiste. Si cela vous fait tomber à 0, vos cris résonneront pendant longtemps dans un asile psychiatrique... fin du jeu pour vous.
+14. Le jeu du dragon apporte parfois des problèmes. Le genre de problèmes qui demandent de garder la tête froide et d’aller couler le corps dans les eaux de la baie. Perdez un vote au prochain tour.
+15. "Ne traite jamais avec un dragon", dit le dicton des runners... À cause d’une vilaine rumeur vous concernant qui a atteint les ombres, vous ne pourrez pas ajouter de +30% à vos runs jusqu’à la fin du prochain tour.
+16. Il se murmure en haut lieu que votre comportement est devenu étrangement erratique. En pleine période électorale, cela ne peut tout simplement pas être toléré. Perdez si possible 2 points politique.
+17. La tête de votre chauffeur vous est remise dans un panier d’osier. Un clan yakuza au hasard (sans loyauté envers vous) n’a pas aimé vos manigances et est devenu votre ennemi public.
+18. Une cascade d’enquêtes pour fraude fiscale et malversations sont discrètement ouvertes contre vous par les autorités, gelant certaines de vos opérations. Vous ne pourrez pas spéculer jusqu’à la fin du prochain tour.
+19. Les Kamis sont contre vous, et tout le monde est au courant. Perdez 1 point d’honneur.
+20. Il aura suffit de pousser une porte de plus, de soulever un dernier rideau pour réaliser enfin que ce que vous croyez savoir n’était que du vent. Le dragon vous a fait danser comme une marionnette. Tous les +1 et -1 de vos votes du tour sont inversés.
+
+À son paroxysme, le jeu du dragon est plus addictif que n’importe quelle drogue. Si vous obtenez un résultat de 1 à 10, vous êtes obligé de rejouer au prochain tour.

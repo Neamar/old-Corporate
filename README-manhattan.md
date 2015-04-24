@@ -1,5 +1,7 @@
 Corporate Game Manhattan.
 
+En ligne sur https://github.com/Neamar/corporate
+
 ## Étude de cas.
 Réduire les concepts au maximum...
 
